@@ -1,0 +1,14 @@
+---
+eleventyNavigation:
+  key: Góc Chị Em
+  order: 2
+layout: layouts/home.njk
+title: Góc Chị Em
+permalink: /tags/goc-chi-em/
+---
+<h1>{{ title }}</h1>
+
+{% set postslist = collections['Chuyện chị em'] %}
+{% include "postslist.njk" %}
+
+<p>See <a href="/tags/">all tags</a>.</p>

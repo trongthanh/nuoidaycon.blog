@@ -1,0 +1,14 @@
+---
+eleventyNavigation:
+  key: Góc Review
+  order: 2
+layout: layouts/home.njk
+title: Góc Review
+permalink: /tags/review/
+---
+<h1>{{ title }}</h1>
+
+{% set postslist = collections['Review'] %}
+{% include "postslist.njk" %}
+
+<p>See <a href="/tags/">all tags</a>.</p>

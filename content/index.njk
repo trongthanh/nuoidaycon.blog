@@ -3,19 +3,45 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 3
+pagination:
+  data: collections.posts
+  size: 10
+  reverse: true
+  alias: posts
+permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<h1>Blog Posts</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
+{% set postslist = posts %}
 {% include "postslist.njk" %}
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
+{% if pagination.pages.length > 1 %}
+<nav class="pagination">
+  <div class="pagination-previous">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}">← Previous</a>
+    {% else %}
+      <span>← Previous</span>
+    {% endif %}
+  </div>
+
+  <div class="pagination-pages">
+    {% for pageNumber in pagination.pages %}
+      {% set pageHref = pagination.hrefs[ loop.index0 ] %}
+      <a href="{{ pageHref }}"{% if page.url == pageHref %} aria-current="page"{% endif %}>
+        {{ loop.index }}
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="pagination-next">
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}">Next →</a>
+    {% else %}
+      <span>Next →</span>
+    {% endif %}
+  </div>
+</nav>
 {% endif %}
 
 {# List every content page in the project #}
