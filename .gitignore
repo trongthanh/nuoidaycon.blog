@@ -1,10 +1,11 @@
 _site/
 node_modules/
 package-lock.json
-.cache
+_ghost/
 # cache
 .linaria-cache/
 .eslintcache
+.cache
 
 # secrets
 deployment/**/*.json
