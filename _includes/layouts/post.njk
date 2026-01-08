@@ -3,7 +3,7 @@ layout: layouts/base.njk
 bodyClass: post-template
 ---
 {% block styles %}
-<link rel="stylesheet" type="text/css" href="/theme/css/post.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {% endblock %}
 
@@ -82,7 +82,7 @@ bodyClass: post-template
 						{% if metadata.author.image %}
 						<div style="background-image: url({{ metadata.author.image }});"></div>
 						{% else %}
-						<div style="background-image: url(/theme/images/default-avatar-square-small.jpg);"></div>
+						<div style="background-image: url(/images/default-avatar-square-small.jpg);"></div>
 						{% endif %}
 					</a>
 				</div>

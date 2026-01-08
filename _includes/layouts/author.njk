@@ -3,7 +3,7 @@ layout: layouts/base.njk
 bodyClass: author-template
 ---
 {% block styles %}
-<link rel="stylesheet" type="text/css" href="/theme/css/listing.css">
+<link rel="stylesheet" type="text/css" href="/css/listing.css">
 {% endblock %}
 
 {#- Hero section #}
@@ -12,7 +12,7 @@ bodyClass: author-template
 		{% if metadata.author.image %}
 		<div class="m-hero-avatar" style="background-image: url({{ metadata.author.image }});"></div>
 		{% else %}
-		<div class="m-hero-avatar" style="background-image: url(/theme/images/default-avatar-square-normal.jpg);"></div>
+		<div class="m-hero-avatar" style="background-image: url(/images/default-avatar-square-normal.jpg);"></div>
 		{% endif %}
 		<h1 class="m-hero-title">{{ metadata.author.name }}</h1>
 		{% if metadata.author.bio %}
