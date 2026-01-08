@@ -4,6 +4,7 @@ slug: tu-nhien-ma-song
 date_published: 2021-03-12T07:28:46.000Z
 date_updated: 2021-03-12T07:29:28.000Z
 tags: Tự nhiên mà sống
+feature_image: /images/2021/03/Stream.jpg
 ---
 
 ![](/images/2021/03/Stream.jpg)

@@ -10,6 +10,7 @@ tags:
 excerpt: |
   Ai bảo con nít không biết gì. Con chưa từng trải đời, nhưng con cũng biết chân lý của hạnh phúc. Không cần nhiều, chỉ cần được tồn tại với những người mình yêu thương, và dành thời gian để vui.
   Với mẹ, các con là thông thái nhất, và ba mẹ vẫn đang học mỗi ngày từ các con.
+feature_image: /images/2020/06/Ve---que--tha-m-ruo--ng.jpg
 ---
 
 Mỗi tối, sau khi giảm ánh sáng đèn ngủ, Thiện được mẹ nằm xoa lưng và tâm sự với mẹ.

@@ -1,8 +1,8 @@
 ---
-layout: layouts/base.njk
+layout: layouts/post.njk
 eleventyNavigation:
-  key: Giới thiệu
-  order: 3
+  key: Giới Thiệu
+  order: 5
 title: Giới thiệu
 slug: gioi-thieu
 date_published: 2019-08-25T18:04:46.000Z

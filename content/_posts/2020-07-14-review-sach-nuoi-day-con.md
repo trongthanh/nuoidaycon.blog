@@ -9,6 +9,7 @@ tags:
   - Nuôi dạy con
   - Tự nhiên mà sống
 excerpt: Sau khi nuôi dạy 2 con theo cách khá hiện đại nhưng tôn trọng tối đa bản chất và sự phát triển tự nhiên của con, mình xin chia sẻ 5 cuốn sách Nuôi dạy con mình tâm đắc nhất và hiệu quả nhất với mình để các ba mẹ tham khảo.
+feature_image: /images/2020/07/image-4.png
 ---
 
 Mình đọc kha khá sách nuôi dạy con với tư cách là một người mẹ trung bình muốn mang lại những điều tốt đẹp nhất cho con. Mình cảm thấy rất may mắn mình được bạn bè tặng và giới thiệu những cuốn sách tuyệt vời đó để đọc bên cạnh những hướng dẫn theo truyền thống của các bà, các mẹ, thế hệ đi trước. Tất nhiên, mình không áp dụng tất cả, mà học ở mỗi cuốn một chút, mỗi người một chút để thử áp dụng cho con mình.

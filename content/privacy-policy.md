@@ -1,4 +1,5 @@
 ---
+layout: layouts/post.njk
 title: Privacy Policy
 slug: privacy-policy
 date_published: 2020-07-26T08:01:52.000Z

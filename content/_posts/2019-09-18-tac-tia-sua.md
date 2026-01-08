@@ -7,6 +7,7 @@ tags:
   - Nuôi con
   - Nuôi dạy con
 excerpt: Tắc tia sữa là nỗi sợ lớn nhất của nhiều bà mẹ nuôi con bằng sữa mẹ. Đây là đường tắt mà mình đã đi để vượt qua 2 con trăng, mẹ nào cần thì lượm bí kíp nhé.
+feature_image: /images/2019/09/breastfeed-unsplash.jpg
 ---
 
 ![](/images/2019/09/breastfeed-unsplash.jpg)Photo by [Luiza Braun](https://unsplash.com/@luizabraun?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/breastfeeding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)

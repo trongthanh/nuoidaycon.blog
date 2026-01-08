@@ -9,6 +9,7 @@ tags:
 excerpt: |
   PHỤ NỮ CÓC CẦN PHẢI ĐẸP, nhưng cứ tự nhiên mà đẹp như mình vốn là.
   Làm đẹp để mình tự tin. Đừng làm đẹp vì mình phải đẹp, phải hơn người, phải nổi bật. Đừng để áp lực phải đẹp bên ngoài làm ảnh hưởng đến sức khoẻ, niềm vui và sự tinh tấn trong cuộc sống của chính mình, chị em thân mến nhé!
+feature_image: /images/2020/08/septian-simon-OWSC2LRuO8U-unsplash-1.jpg
 ---
 
 ![](/images/2020/08/septian-simon-OWSC2LRuO8U-unsplash-1.jpg)Photo by [Septian simon](https://unsplash.com/@septiansimon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/make-up-asian-woman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)

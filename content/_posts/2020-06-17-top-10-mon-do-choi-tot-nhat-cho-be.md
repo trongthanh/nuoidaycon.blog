@@ -8,6 +8,7 @@ tags:
   - Dạy con
   - Nuôi dạy con
 excerpt: Top 10 nhóm đồ chơi bé thích lâu dài và tiết kiệm cho ba mẹ
+feature_image: /images/2020/06/Cho-i-nu-o--c.jpg
 ---
 
 So với tuổi thơ của ba mẹ, các bé hiện nay có rất nhiều đồ chơi đa dạng, dễ tìm, giá thành lại phù hợp với mọi túi tiền. Nhưng chắc các ba mẹ cũng biết, nếu mua đồ chơi vô tội vạ, bất cứ mọi lúc mọi nơi sẽ tập hư các con với thói quen vòi vĩnh, cả thèm chóng chán, hạn chế sự sáng tạo của trẻ và biến ngôi nhà chúng ta thành một bãi bừa bộn. Với các mẹ muốn hạn chế tối thiểu số lượng đồ chơi và kích thích tối đa sự sáng tạo của các con, mình xin chia sẻ top 10 món đồ chơi yêu thích của 2 bé nhà mình qua năm tháng.

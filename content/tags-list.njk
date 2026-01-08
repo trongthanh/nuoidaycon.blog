@@ -1,12 +1,34 @@
 ---
 permalink: /tags/
-layout: layouts/home.njk
+layout: layouts/base.njk
+title: Tất cả Tags
+bodyClass: tags-template
 ---
-<h1>Tags</h1>
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/theme/css/tags.css">
+{% endblock %}
 
-<ul>
-{% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+{#- Hero section #}
+<section class="m-hero">
+	<div class="m-hero__content">
+		<h1 class="m-hero-title bigger">Tất cả Tags</h1>
+	</div>
+</section>
+
+<div class="l-content">
+	<div class="l-wrapper">
+		<div class="m-tags-page">
+			<ul class="m-tags-list">
+				{% for tag in collections.all | getAllTags | filterTagList %}
+				{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+				<li>
+					<a href="{{ tagUrl }}" class="m-tag-link">
+						<span class="m-tag-name">{{ tag }}</span>
+						<span class="m-tag-count">{{ collections[tag].length }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

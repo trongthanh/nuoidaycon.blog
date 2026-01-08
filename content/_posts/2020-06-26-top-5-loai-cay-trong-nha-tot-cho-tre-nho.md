@@ -8,6 +8,7 @@ tags:
   - Tự nhiên mà sống
   - Nuôi con
 excerpt: Mình, một bà mẹ lười, đã tìm hiểu và trồng thử nhiều loại cây trong nhà lẫn ngoài sân thượng, nay xin phép review 5 loại cây tốt, an toàn và dễ trồng nhất cho nhà có trẻ nhỏ. Các ông bố bà mẹ muốn trồng một khu vườn be bé tại nhà nên tham khảo cách trồng, chăm sóc chúng nhé!
+feature_image: /images/2020/07/gieng-troi.jpg
 ---
 
 Rất nhiều vấn đề tâm lý của thời đại chúng ta đều bắt nguồn từ việc con người càng ngày càng xa rời thiên nhiên và quá gần với thế giới duy vật chất. Với trẻ nhỏ, việc được tiếp xúc với thiên nhiên từ sớm là cực kỳ quan trọng cho tâm lý và sự phát triển cân bằng của các con.

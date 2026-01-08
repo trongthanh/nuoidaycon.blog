@@ -1,54 +1,37 @@
 ---
 layout: layouts/home.njk
-eleventyNavigation:
-  key: Home
-  order: 1
 pagination:
   data: collections.posts
-  size: 10
+  size: 15
   reverse: true
   alias: posts
 permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
-<h1>Blog Posts</h1>
-
-{% set postslist = posts %}
-{% include "postslist.njk" %}
-
 {% if pagination.pages.length > 1 %}
-<nav class="pagination">
-  <div class="pagination-previous">
-    {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}">← Previous</a>
-    {% else %}
-      <span>← Previous</span>
-    {% endif %}
-  </div>
+<nav class="m-pagination">
+	<div class="pagination-previous">
+		{% if pagination.href.previous %}
+		<a href="{{ pagination.href.previous }}">
+			<span class="icon-arrow-left"></span> Trang trước
+		</a>
+		{% endif %}
+	</div>
 
-  <div class="pagination-pages">
-    {% for pageNumber in pagination.pages %}
-      {% set pageHref = pagination.hrefs[ loop.index0 ] %}
-      <a href="{{ pageHref }}"{% if page.url == pageHref %} aria-current="page"{% endif %}>
-        {{ loop.index }}
-      </a>
-    {% endfor %}
-  </div>
+	<div class="pagination-pages">
+		{% for pageNumber in pagination.pages %}
+		{% set pageHref = pagination.hrefs[ loop.index0 ] %}
+		<a href="{{ pageHref }}"{% if page.url == pageHref %} aria-current="page"{% endif %}>
+			{{ loop.index }}
+		</a>
+		{% endfor %}
+	</div>
 
-  <div class="pagination-next">
-    {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}">Next →</a>
-    {% else %}
-      <span>Next →</span>
-    {% endif %}
-  </div>
+	<div class="pagination-next">
+		{% if pagination.href.next %}
+		<a href="{{ pagination.href.next }}">
+			Trang sau <span class="icon-arrow-right"></span>
+		</a>
+		{% endif %}
+	</div>
 </nav>
 {% endif %}
-
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}

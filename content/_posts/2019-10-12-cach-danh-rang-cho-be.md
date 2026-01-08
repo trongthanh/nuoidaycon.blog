@@ -7,6 +7,7 @@ tags:
   - Nuôi con
   - Nuôi dạy con
 excerpt: Rất nhiều mẹ, cũng như mình, hơi bối rối và thắc mắc đủ thứ về việc đánh răng cho bé, như khi nào thì bắt đầu đánh răng, đánh răng cho bé bằng cái gì, đánh răng cho bé như thế nào... Xin chia sẻ bí kíp đánh răng 2 bước của Cô Tiên Răng!
+feature_image: /images/2020/05/Ra-ng-xinh.jpg
 ---
 
 Rất nhiều mẹ, cũng như mình, hơi bối rối và thắc mắc đủ thứ về việc đánh răng cho bé, như khi nào thì bắt đầu đánh răng, đánh răng cho bé bằng cái gì, đánh răng cho bé như thế nào... Dù là răng sữa sẽ thay khi bé lớn hơn, nhưng rất nhiều bé bị sâu răng, đau răng, nụ cười kém xinh không lung linh sống ảo được vì ba mẹ, ông bà, cô giúp việc chưa biết cách chăm sóc răng miệng cho bé.
