@@ -4,12 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Vietnamese parenting/lifestyle blog built with Eleventy v3.1.2 (eleventy-base-blog v8). The site is statically generated with zero runtime JavaScript, optimized for perfect Lighthouse scores (4x 100s).
+This is a Vietnamese parenting/lifestyle blog built with Eleventy v3.1.2 (eleventy-base-blog v8). The site uses a custom theme based on the **Ghost Liebling theme**, converted to Nunjucks templates. The site is statically generated with zero runtime JavaScript, optimized for perfect Lighthouse scores.
 
 **Package Manager**: pnpm (v10.27.0)
 **Node Version**: v20+ (see .nvmrc)
 **Language**: Vietnamese (vi)
 **Template Engine**: Nunjucks
+**Theme**: Ghost Liebling (converted)
 
 ## Development Commands
 
@@ -40,26 +41,44 @@ pnpm run build-ghpages
 ```
 content/                    # Input directory (all site content)
 ├── _posts/                 # Blog posts (auto-tagged with "posts")
-├── chuyen-chi-em/          # "Women's Corner" collection
-├── gioi-thieu/             # "About" page
-├── nuoi-day-con/           # "Parenting" collection
-├── review/                 # "Reviews" collection
+├── chuyen-chi-em/          # "Women's Corner" collection page
+├── gioi-thieu/             # "About/Author" page
+├── nuoi-day-con/           # "Parenting" collection page
+├── review/                 # "Reviews" collection page
 ├── feed/                   # Atom/JSON feed generation
 └── index.njk               # Homepage with pagination (10 posts/page)
 
 _includes/
 ├── layouts/
-│   ├── base.njk            # Root HTML layout
-│   ├── home.njk            # Homepage/collection layout (extends base)
-│   └── post.njk            # Blog post layout (extends base)
-└── postslist.njk           # Reusable posts list component
+│   ├── base.njk            # Root HTML layout (Ghost theme structure)
+│   ├── home.njk            # Homepage layout (3-column featured + grid)
+│   ├── post.njk            # Blog post layout (hero, share, author)
+│   ├── tag.njk             # Tag page layout
+│   ├── author.njk          # Author page layout
+│   └── collection.njk      # Collection page layout
+├── partials/
+│   ├── header.njk          # Site header with logo, nav, search
+│   ├── footer.njk          # Site footer with logo, social links
+│   ├── search.njk          # Search overlay component
+│   ├── article-card.njk    # Standard article card for grids
+│   ├── article-card-small.njk  # Small card for featured sidebar
+│   └── featured-card.njk   # Large featured card for homepage
+└── postslist.njk           # Legacy posts list component
 
 _data/
-└── metadata.js             # Global site metadata (title, author, URL, language)
+└── metadata.js             # Global site metadata (title, author, logo, social)
 
 public/                     # Static assets (passthrough copied to /)
-├── css/                    # Stylesheets
+├── theme/                  # Ghost Liebling theme assets
+│   ├── css/                # Theme stylesheets (app.css, home.css, etc.)
+│   ├── js/                 # Theme JavaScript (app.js, vendor.js)
+│   ├── fonts/              # Icon fonts (icomoon)
+│   └── images/             # Theme images (default-bg.jpg, etc.)
+├── css/                    # Additional stylesheets
 └── images/                 # Blog images (organized by year/month)
+
+_ghost/                     # Original Ghost theme source (reference only)
+└── theme/                  # Liebling theme files
 
 _site/                      # Output directory (generated)
 ```
@@ -121,6 +140,33 @@ eleventyNavigation:
 ```
 
 ## Custom Features
+
+### Ghost Theme Components
+
+The site uses converted Ghost Liebling theme components:
+
+**Layouts:**
+- `base.njk`: Main HTML structure with theme CSS/JS includes
+- `home.njk`: Homepage with 3-column featured section + "LATEST" grid
+- `post.njk`: Blog post with hero image, share buttons, author bio, related posts
+- `tag.njk`: Tag archive pages with hero and post grid
+- `collection.njk`: Collection pages (uses `collectionName` frontmatter)
+- `author.njk`: Author/about page with avatar, bio, social links
+
+**Partials:**
+- `header.njk`: Logo, navigation menu, search icon, dark mode toggle
+- `footer.njk`: Logo, Facebook link, "Powered by Eleventy"
+- `article-card.njk`: Standard post card for grids
+- `article-card-small.njk`: Compact card for featured sidebar
+- `featured-card.njk`: Large card for homepage center
+
+**Theme CSS files** (in `public/theme/css/`):
+- `app.css`: Main theme styles with CSS variables
+- `home.css`: Homepage-specific styles
+- `listing.css`: Post grid layouts
+- `post.css`: Individual post styles
+- `tags.css`: Tag page styles
+- `custom.css`: Custom 3-column featured layout
 
 ### Image Shortcode
 
@@ -190,11 +236,10 @@ File: `.pages.yml` (Page CMS - https://app.pagescms.org)
 
 ## Performance Targets
 
-- **Zero JavaScript**: All output is pre-rendered HTML/CSS
-- **Lighthouse Scores**: 4x 100s (performance, accessibility, best practices, SEO)
-- **Cumulative Layout Shift**: 0ms (width/height on images)
-- **Total Blocking Time**: 0ms (no JS)
+- **Lighthouse Scores**: Optimized for high performance scores
+- **Cumulative Layout Shift**: Minimized (width/height on images)
 - **Image Formats**: Modern AVIF/WebP with fallbacks
+- **Theme JS**: Bundled vendor.js + app.js for search, dark mode, responsive features
 
 ## Code Style
 
@@ -214,21 +259,33 @@ Per `.editorconfig`:
 3. **Tag System**:
    - Multi-tag support per post
    - Auto-generates tag pages at `/tags/{slug}/`
-   - System tags (all, nav, post, posts) are filtered from display
+   - System tags (all, nav, post, posts, tagList) and collection names are filtered from display
 
-4. **Pagination**:
+4. **Draft Posts**:
+   - Set `draft: true` in post frontmatter
+   - Drafts are visible during `--serve`/`--watch` mode
+   - Drafts are excluded from production builds (permalink returns false, excluded from collections)
+   - Use `BUILD_DRAFTS=true` env var to include drafts in production builds
+
+5. **Collection Pages**:
+   - Use `layouts/collection.njk` layout
+   - Set `collectionName` in frontmatter to match the tag name (with diacritics)
+   - Example: `collectionName: Chuyện chị em` for posts tagged "Chuyện chị em"
+   - Collection pages have custom permalinks: `/tags/chuyen-chi-em/`
+
+6. **Pagination**:
    - Homepage shows 10 posts per page
    - URL pattern: `/`, `/page/2/`, `/page/3/`
    - Uses `pagination` in front matter
 
-5. **Feeds**:
+7. **Feeds**:
    - Atom: `/feed/feed.xml`
    - JSON: `/feed/feed.json`
    - Both include full post content
 
-6. **CSP Considerations**: CSS is inlined by default. For strict CSP, uncomment the `<link>` tag in `base.njk` and remove inline `<style>`.
+8. **Theme Assets**: Ghost Liebling theme assets are in `public/theme/`. Original theme source is preserved in `_ghost/theme/` for reference.
 
-7. **Passthrough Copy**: `public/` directory contents are copied directly to `_site/` root. Prism.js CSS theme is also copied from node_modules.
+9. **Passthrough Copy**: `public/` directory contents are copied directly to `_site/` root. This includes `theme/` directory with CSS, JS, fonts, and images.
 
 ## Plugin Documentation
 

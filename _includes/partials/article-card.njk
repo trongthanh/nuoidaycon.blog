@@ -1,0 +1,29 @@
+{#- Article card component for posts #}
+{#- Usage: {% include "partials/article-card.njk" %} with post variable in scope #}
+<article class="m-article-card {% if not post.data.feature_image %}no-picture{% endif %}">
+	<div class="m-article-card__picture">
+		<a href="{{ post.url }}" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
+		{% if post.data.feature_image %}
+		<img class="m-article-card__picture-background" src="{{ post.data.feature_image }}" loading="lazy" alt="{{ post.data.title }}">
+		{% endif %}
+	</div>
+	<div class="m-article-card__info">
+		<a href="{{ post.url }}" class="m-article-card__info-link" aria-label="{{ post.data.title }}">
+			<h2 class="m-article-card__title js-article-card-title" title="{{ post.data.title }}">
+				{{ post.data.title }}
+			</h2>
+		</a>
+		{% if post.data.excerpt %}
+		<p class="m-article-card__excerpt">{{ post.data.excerpt | truncate(80) }}</p>
+		{% elif post.data.description %}
+		<p class="m-article-card__excerpt">{{ post.data.description | truncate(80) }}</p>
+		{% elif post.templateContent %}
+		<p class="m-article-card__excerpt">{{ post.templateContent | striptags | truncate(80) }}</p>
+		{% endif %}
+		<div class="m-article-card__timestamp">
+			<span>By {{ metadata.author.name }}</span>
+			<span>&mdash;</span>
+			<span>{{ post.date | readableDate("dd 'Th'LL yyyy") }}</span>
+		</div>
+	</div>
+</article>

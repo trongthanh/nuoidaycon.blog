@@ -1,6 +1,74 @@
 ---
 layout: layouts/base.njk
 ---
-{%- css %}{% include "public/css/pagination.css" %}{% endcss %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/theme/css/home.css">
+<link rel="stylesheet" type="text/css" href="/theme/css/listing.css">
+{% endblock %}
 
-{{ content | safe }}
+<div class="l-content">
+	<div class="l-wrapper">
+		{#- Featured section - 3 column layout #}
+		{% if posts.length > 0 %}
+		<section class="m-featured-section">
+			<div class="m-featured-grid">
+				{#- Left column - 3 small cards #}
+				<div class="m-featured-side m-featured-left">
+					{% if posts[1] %}
+					{% set post = posts[1] %}
+					{% include "partials/article-card-small.njk" %}
+					{% endif %}
+					{% if posts[3] %}
+					{% set post = posts[3] %}
+					{% include "partials/article-card-small.njk" %}
+					{% endif %}
+					{% if posts[5] %}
+					{% set post = posts[5] %}
+					{% include "partials/article-card-small.njk" %}
+					{% endif %}
+				</div>
+
+				{#- Center column - 1 large featured card #}
+				<div class="m-featured-center">
+					{% if posts[0] %}
+					{% set post = posts[0] %}
+					{% include "partials/featured-card.njk" %}
+					{% endif %}
+				</div>
+
+				{#- Right column - 3 small cards #}
+				<div class="m-featured-side m-featured-right">
+					{% if posts[2] %}
+					{% set post = posts[2] %}
+					{% include "partials/article-card-small.njk" %}
+					{% endif %}
+					{% if posts[4] %}
+					{% set post = posts[4] %}
+					{% include "partials/article-card-small.njk" %}
+					{% endif %}
+					{% if posts[6] %}
+					{% set post = posts[6] %}
+					{% include "partials/article-card-small.njk" %}
+					{% endif %}
+				</div>
+			</div>
+		</section>
+		{% endif %}
+
+		{#- LATEST section - skip first 7 posts shown in featured section #}
+		{% set latestPosts = posts | skip(7) %}
+		{% if latestPosts.length > 0 %}
+		<section class="m-latest-section">
+			<h3 class="m-section-title align-left">LATEST</h3>
+			<div class="l-grid centered">
+				{% for post in latestPosts %}
+				{% include "partials/article-card.njk" %}
+				{% endfor %}
+			</div>
+		</section>
+		{% endif %}
+	</div>
+
+	{#- Pagination #}
+	{{ content | safe }}
+</div>

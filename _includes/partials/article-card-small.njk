@@ -1,0 +1,19 @@
+{#- Small article card for featured section side columns #}
+{#- Usage: {% include "partials/article-card-small.njk" %} with post variable in scope #}
+<article class="m-article-card-small">
+	{% if post.data.feature_image %}
+	<a href="{{ post.url }}" class="m-article-card-small__picture">
+		<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" loading="lazy">
+	</a>
+	{% endif %}
+	<div class="m-article-card-small__content">
+		<a href="{{ post.url }}" class="m-article-card-small__title-link">
+			<h3 class="m-article-card-small__title">{{ post.data.title }}</h3>
+		</a>
+		<div class="m-article-card-small__meta">
+			<span>By {{ metadata.author.name }}</span>
+			<span>&mdash;</span>
+			<span>{{ post.date | readableDate("dd 'Th'LL yyyy") }}</span>
+		</div>
+	</div>
+</article>

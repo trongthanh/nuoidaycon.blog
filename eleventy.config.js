@@ -50,6 +50,11 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd')
 	})
 
+	// Get the current year
+	eleventyConfig.addFilter('currentYear', () => {
+		return DateTime.now().toFormat('yyyy')
+	})
+
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter('head', (array, n) => {
 		if (!Array.isArray(array) || array.length === 0) {
@@ -60,6 +65,14 @@ module.exports = function (eleventyConfig) {
 		}
 
 		return array.slice(0, n)
+	})
+
+	// Skip the first `n` elements of a collection.
+	eleventyConfig.addFilter('skip', (array, n) => {
+		if (!Array.isArray(array) || array.length === 0) {
+			return []
+		}
+		return array.slice(n)
 	})
 
 	// Return the smallest number argument
@@ -78,6 +91,11 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addFilter('filterTagList', function filterTagList(tags) {
 		return (tags || []).filter((tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1)
+	})
+
+	// Filter out draft posts from collections
+	eleventyConfig.addFilter('withoutDrafts', (collection) => {
+		return (collection || []).filter((item) => !item.data.draft)
 	})
 
 	// Customize Markdown library settings:

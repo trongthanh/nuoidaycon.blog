@@ -1,0 +1,482 @@
+/* Custom CSS for 11ty theme adaptation of Ghost Liebling */
+
+/* ===== FONT CONFIGURATION ===== */
+
+/* Sans-serif font stack for UI elements, titles, navigation, tags, meta */
+:root {
+	--font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	--font-serif: "Source Serif 4", "Source Serif", Lora, Georgia, "Times New Roman", Times, serif;
+}
+
+/* Override body font to sans-serif (from current Source Serif Pro) */
+body {
+	font-family: var(--font-sans) !important;
+}
+
+/* All headings use sans-serif */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-sans) !important;
+}
+
+/* Serif font only for post body content */
+.l-post-content,
+.l-post-content p,
+.l-post-content li,
+.l-post-content td {
+	font-family: var(--font-serif) !important;
+}
+
+/* Headings inside post content use sans-serif */
+.l-post-content h1,
+.l-post-content h2,
+.l-post-content h3,
+.l-post-content h4,
+.l-post-content h5,
+.l-post-content h6 {
+	font-family: var(--font-sans) !important;
+}
+
+/* Blockquotes use serif */
+.l-post-content blockquote {
+	font-family: var(--font-serif) !important;
+}
+
+/* ===== END FONT CONFIGURATION ===== */
+
+
+
+/* Featured Section Grid - 3 column layout */
+.m-featured-section {
+	padding: 40px 0 30px;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-section {
+		padding: 60px 0 40px;
+	}
+}
+
+.m-featured-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-grid {
+		grid-template-columns: 1fr 2fr 1fr;
+		gap: 30px;
+	}
+}
+
+/* Featured side columns */
+.m-featured-side {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-side {
+		gap: 30px;
+	}
+}
+
+/* Featured center column - show first on mobile */
+.m-featured-center {
+	order: -1;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-center {
+		order: 0;
+	}
+}
+
+/* Featured Article (center column large card) - Override Ghost theme */
+.m-featured-article {
+	display: flex !important;
+	flex-direction: column !important;
+	position: relative !important;
+	background-color: #fff !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+
+.m-featured-article__picture {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	width: 100% !important;
+	height: auto !important;
+	overflow: hidden;
+	border-radius: 3px;
+	background-color: var(--secondary-subtle-color);
+	margin-bottom: 20px;
+	display: block !important;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-article__picture {
+		margin-bottom: 25px;
+	}
+}
+
+.m-featured-article__picture img {
+	width: 100%;
+	height: auto;
+	min-height: 200px;
+	max-height: 300px;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+	display: block !important;
+	opacity: 1 !important;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-article__picture img {
+		min-height: 280px;
+		max-height: 400px;
+	}
+}
+
+.m-featured-article__picture:hover img {
+	transform: scale(1.02);
+}
+
+.m-featured-article__content {
+	position: relative !important;
+	padding: 0 !important;
+	background-color: #fff;
+	height: auto !important;
+	display: block !important;
+}
+
+.m-featured-article__tag {
+	display: inline-block;
+	color: var(--titles-color) !important;
+	letter-spacing: 0.5px;
+	font-size: 0.75rem;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.m-featured-article__tag:hover {
+	color: var(--secondary-foreground-color);
+}
+
+.m-featured-article__title-link {
+	text-decoration: none;
+}
+
+.m-featured-article__title {
+	color: var(--secondary-foreground-color) !important;
+	letter-spacing: 0.3px;
+	line-height: 1.3;
+	font-size: 1.625rem;
+	font-weight: 600;
+	margin: 0 0 15px;
+	max-width: 100% !important;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-article__title {
+		letter-spacing: 0.4px;
+		font-size: 2rem;
+	}
+}
+
+.m-featured-article__excerpt {
+	color: var(--titles-color) !important;
+	letter-spacing: 0.2px;
+	line-height: 1.6;
+	font-size: 0.938rem;
+	margin: 0 0 15px;
+	display: block !important;
+	position: relative !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-article__excerpt {
+		font-size: 1rem;
+	}
+}
+
+.m-featured-article__meta {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	color: var(--titles-color) !important;
+	letter-spacing: 0.2px;
+	font-size: 0.813rem;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-featured-article__meta {
+		font-size: 0.875rem;
+	}
+}
+
+.m-featured-article__meta span {
+	display: inline;
+}
+
+.m-featured-article__timestamp {
+	color: var(--titles-color) !important;
+}
+
+/* Small Article Card (side columns) */
+.m-article-card-small {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background-color);
+	overflow: hidden;
+}
+
+.m-article-card-small__picture {
+	position: relative;
+	overflow: hidden;
+	background-color: var(--secondary-subtle-color);
+	border-radius: 3px;
+}
+
+.m-article-card-small__picture img {
+	width: 100%;
+	height: 100px;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-article-card-small__picture img {
+		height: 90px;
+	}
+}
+
+.m-article-card-small__picture:hover img {
+	transform: scale(1.02);
+}
+
+.m-article-card-small__content {
+	padding: 12px 0 0;
+}
+
+.m-article-card-small__title-link {
+	text-decoration: none;
+}
+
+.m-article-card-small__title {
+	color: var(--secondary-foreground-color);
+	letter-spacing: 0.2px;
+	line-height: 1.35;
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0 0 8px;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-article-card-small__title {
+		font-size: 0.938rem;
+	}
+}
+
+.m-article-card-small__meta {
+	color: var(--titles-color);
+	letter-spacing: 0.15px;
+	font-size: 0.688rem;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-article-card-small__meta {
+		font-size: 0.75rem;
+	}
+}
+
+.m-article-card-small__meta span {
+	display: inline;
+}
+
+/* LATEST section */
+.m-latest-section {
+	padding: 40px 0;
+	border-top: 1px solid var(--secondary-border-color);
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-latest-section {
+		padding: 50px 0;
+	}
+}
+
+.m-latest-section .m-section-title {
+	margin-bottom: 30px;
+	font-size: 0.813rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-latest-section .m-section-title {
+		font-size: 0.875rem;
+		margin-bottom: 35px;
+	}
+}
+
+/* Article card info adjustments - Override Ghost theme */
+.m-article-card__info {
+	height: auto !important;
+	overflow: visible !important;
+	padding: 15px 0 0 !important;
+}
+
+.m-article-card__info-link {
+	display: block !important;
+	height: auto !important;
+	padding: 0 !important;
+}
+
+.m-article-card__title {
+	margin-bottom: 8px !important;
+	padding: 0 15px !important;
+}
+
+/* Article card excerpt */
+.m-article-card__excerpt {
+	color: var(--titles-color) !important;
+	letter-spacing: 0.15px;
+	line-height: 1.5;
+	font-size: 0.875rem;
+	margin: 0 0 10px !important;
+	padding: 0 15px !important;
+	display: -webkit-box !important;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden !important;
+	height: auto !important;
+	position: relative !important;
+}
+
+/* Article card timestamp */
+.m-article-card__timestamp {
+	display: flex !important;
+	margin-top: 10px;
+	padding: 0 15px !important;
+	color: var(--titles-color) !important;
+	font-size: 0.813rem;
+}
+
+/* Grid layout for article cards - match app.css */
+.l-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 48rem) {
+	.l-grid {
+		margin: 0 -15px;
+	}
+}
+
+.l-grid.centered {
+	justify-content: flex-start;
+}
+
+/* Article card adjustments to match Ghost theme - 4 columns */
+.m-article-card {
+	width: 100%;
+	margin: 0 10px 25px;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-article-card {
+		width: calc(50% - 30px);
+		margin: 0 15px 30px;
+	}
+}
+
+@media only screen and (min-width: 64rem) {
+	.m-article-card {
+		width: calc(25% - 30px);
+		margin: 0 15px 40px;
+	}
+}
+
+/* Pagination styles - extending Ghost theme's m-pagination */
+.m-pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 20px;
+	gap: 15px;
+}
+
+.m-pagination a,
+.m-pagination span {
+	color: var(--titles-color);
+	font-size: 0.875rem;
+}
+
+.m-pagination a:hover {
+	color: var(--primary-subtle-color);
+}
+
+.m-pagination .pagination-pages {
+	display: flex;
+	gap: 5px;
+}
+
+.m-pagination .pagination-pages a {
+	padding: 8px 12px;
+	border-radius: 3px;
+	transition: background-color 0.2s ease;
+}
+
+.m-pagination .pagination-pages a[aria-current="page"] {
+	background-color: var(--secondary-subtle-color);
+	font-weight: 600;
+}
+
+.m-pagination .pagination-previous a,
+.m-pagination .pagination-next a {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 8px 12px;
+}
+
+/* Fix header spacing - keep fixed header on desktop */
+.m-header {
+	position: relative;
+}
+
+@media only screen and (min-width: 48rem) {
+	.m-header {
+		position: fixed;
+	}
+
+	.main-wrap {
+		padding-top: 70px;
+	}
+}
+
+/* Hide the 11ty dark mode toggle - use Ghost theme's toggle */
+:root .m-toggle-darkmode {
+	display: block;
+}
+
+/* Article card picture styling */
+.m-article-card__picture {
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.m-article-card__picture-background {
+	border-radius: 3px;
+}

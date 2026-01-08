@@ -1,120 +1,124 @@
-# eleventy-base-blog v8
+# NDC - Nuôi Dạy Con Blog
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)).
+A Vietnamese parenting/lifestyle blog built with [Eleventy](https://www.11ty.dev/) v3.1.2 and styled with the [Ghost Liebling theme](https://github.com/eddiesigner/liebling) (converted to Nunjucks).
+
+Based on [eleventy-base-blog v8](https://github.com/11ty/eleventy-base-blog).
 
 ## Getting Started
 
-* [Want a more generic/detailed getting started guide?](https://www.11ty.dev/docs/getting-started/)
+### Prerequisites
 
-1. Make a directory and navigate to it:
+- Node.js v20+ (see `.nvmrc`)
+- pnpm v10+
 
-```
-mkdir my-blog-name
-cd my-blog-name
-```
+### Installation
 
-2. Clone this Repository
+```bash
+# Install dependencies
+pnpm install
 
-```
-git clone https://github.com/11ty/eleventy-base-blog.git .
-```
+# Development server with live reload
+pnpm start
 
-_Optional:_ Review `eleventy.config.js` and `_data/metadata.js` to configure the site’s options and data.
+# Production build
+pnpm run build
 
-3. Install dependencies
-
-```
-npm install
+# Debug mode
+pnpm run debug
 ```
 
-4. Run Eleventy
+### Configuration
 
-Generate a production-ready build to the `_site` folder:
-
-```
-npx @11ty/eleventy
-```
-
-Or build and host on a local development server:
-
-```
-npx @11ty/eleventy --serve
-```
-
-Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
+- `_data/metadata.js` - Site metadata (title, URL, author info, social links)
+- `eleventy.config.js` - Eleventy configuration
 
 ## Features
 
-- Using [Eleventy v2.0](https://www.11ty.dev/blog/eleventy-v2/) with zero-JavaScript output.
-	- Content is exclusively pre-rendered (this is a static site).
-	- Can easily [deploy to a subfolder without changing any content](https://www.11ty.dev/docs/plugins/html-base/)
-	- All URLs are decoupled from the content’s location on the file system.
-	- Configure templates via the [Eleventy Data Cascade](https://www.11ty.dev/docs/data-cascade/)
-- **Performance focused**: four-hundos Lighthouse score out of the box!
-	- [View the Lighthouse report for the latest build](https://eleventy-base-blog.netlify.app/reports/lighthouse/) courtesy of the [Netlify Lighthouse plugin](https://github.com/netlify/netlify-plugin-lighthouse).
-	- _0 Cumulative Layout Shift_
-	- _0ms Total Blocking Time_
-- Local development live reload provided by [Eleventy Dev Server](https://www.11ty.dev/docs/dev-server/).
-- Content-driven [navigation menu](https://www.11ty.dev/docs/plugins/navigation/)
-- [Image optimization](https://www.11ty.dev/docs/plugins/image/) via the `{% image %}` shortcode.
-	- Zero-JavaScript output.
-	- Support for modern image formats automatically (e.g. AVIF and WebP)
-	- Prefers `<img>` markup if possible (single image format) but switches automatically to `<picture>` for multiple image formats.
-	- Automated `<picture>` syntax markup with `srcset` and optional `sizes`
-	- Includes `width`/`height` attributes to avoid [content layout shift](https://web.dev/cls/).
-	- Includes `loading="lazy"` for native lazy loading without JavaScript.
-	- Includes [`decoding="async"`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/decoding)
-	- Images can be co-located with blog post files.
-	- View the [Image plugin source code](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.images.js)
-- Per page CSS bundles [via `eleventy-plugin-bundle`](https://github.com/11ty/eleventy-plugin-bundle).
-- Built-in [syntax highlighter](https://www.11ty.dev/docs/plugins/syntaxhighlight/) (zero-JavaScript output).
-- Blog Posts
-	- Draft posts: use `draft: true` to mark a blog post as a draft. Drafts are **only** included during `--serve`/`--watch` and are excluded from full builds. View the [Drafts plugin source code](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.drafts.js).
-	- Automated next/previous links
-	- Accessible deep links to headings
-- Generated Pages
-	- Home, Archive, and About pages.
-	- [Feeds for Atom and JSON](https://www.11ty.dev/docs/plugins/rss/)
-	- `sitemap.xml`
-	- Zero-maintenance tag pages ([View on the Demo](https://eleventy-base-blog.netlify.app/tags/))
-	- Content not found (404) page
+### Theme
+- **Ghost Liebling Theme**: Beautiful, modern design converted from Ghost to Nunjucks
+- **3-Column Featured Section**: Homepage displays 7 featured posts (1 large center + 3 small on each side)
+- **LATEST Section**: Grid of remaining posts with excerpts, author, and date
+- **Dark Mode**: Toggle between light and dark themes
+- **Search**: Built-in search functionality
+- **Responsive Design**: Mobile-first responsive layouts
+- **Typography**: Sans-serif (Inter) for UI/headings, serif (Source Serif 4) for post body content
 
-## Demos
+### Content
+- **Blog Posts**: Vietnamese parenting/lifestyle content in `content/_posts/`
+- **Collections**:
+  - Nuôi dạy con (Parenting)
+  - Chuyện chị em (Women's Corner)
+  - Review (Product/Book Reviews)
+- **Draft Support**: Use `draft: true` in frontmatter to hide posts from production builds
+- **Tag Pages**: Auto-generated tag archive pages
 
-- [Netlify](https://eleventy-base-blog.netlify.com/)
-- [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
-- [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
-- [Cloudflare Pages](https://eleventy-base-blog-d2a.pages.dev/)
+### Technical
+- **Eleventy v3.1.2**: Static site generator with Nunjucks templating
+- **Image Optimization**: AVIF/WebP formats via `{% image %}` shortcode
+- **RSS Feeds**: Atom and JSON feeds
+- **Navigation**: Content-driven menu via eleventyNavigation plugin
+- **Live Reload**: Development server with hot reload
 
-## Deploy this to your own site
+## Project Structure
 
-Deploy this Eleventy site in just a few clicks on these services:
+```
+content/                    # Site content
+├── _posts/                 # Blog posts (Markdown)
+├── gioi-thieu/             # About page
+└── index.njk               # Homepage
 
-- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-- If you run Eleventy locally you can drag your `_site` folder to [`drop.netlify.com`](https://drop.netlify.com/) to upload it without using `git`.
-- [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
-- [Try it out on Stackblitz](https://stackblitz.com/github/11ty/eleventy-base-blog)
-- Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
+_includes/
+├── layouts/                # Page layouts (base, home, post, tag, collection, author)
+└── partials/               # Reusable components (header, footer, cards)
 
-### Implementation Notes
+public/
+├── theme/                  # Ghost theme assets (CSS, JS, fonts)
+└── images/                 # Blog images (organized by YYYY/MM)
 
-- `content/about/index.md` is an example of a content page.
-- `content/blog/` has the blog posts but really they can live in any directory. They need only the `posts` tag to be included in the blog posts [collection](https://www.11ty.dev/docs/collections/).
-- Use the `eleventyNavigation` key (via the [Eleventy Navigation plugin](https://www.11ty.dev/docs/plugins/navigation/)) in your front matter to add a template to the top level site navigation. This is in use on `content/index.njk` and `content/about/index.md`.
-- Content can be in _any template format_ (blog posts needn’t exclusively be markdown, for example). Configure your project’s supported templates in `eleventy.config.js` -> `templateFormats`.
-- The `public` folder in your input directory will be copied to the output folder (via `addPassthroughCopy` in the `eleventy.config.js` file). This means `./public/css/*` will live at `./_site/css/*` after your build completes.
-- Provides two content feeds:
-	- `content/feed/feed.njk`
-	- `content/feed/json.njk`
-- This project uses three [Eleventy Layouts](https://www.11ty.dev/docs/layouts/):
-	- `_includes/layouts/base.njk`: the top level HTML structure
-	- `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-	- `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-- `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
+_ghost/theme/               # Original Ghost Liebling theme (reference)
+```
 
-#### Content Security Policy
+## Writing Posts
 
-If your site enforces a [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) (as public-facing sites should), you have a few choices (pick one):
+Create new posts in `content/_posts/` with frontmatter:
 
-1. In `base.njk`, remove `<style>{% getBundle "css" %}</style>` and uncomment `<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">`
-2. Configure the server with the CSP directive `style-src: 'unsafe-inline'` (less secure).
+```yaml
+---
+title: Post Title
+excerpt: Short excerpt shown on article cards (recommended)
+date: 2024-01-15
+tags:
+  - Nuôi dạy con
+feature_image: /images/2024/01/image.jpg
+draft: false
+---
+```
+
+### Frontmatter Fields
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | Yes | Post title |
+| `date` | Yes | Publish date (YYYY-MM-DD) |
+| `excerpt` | No | Short description for cards (auto-generated from content if missing) |
+| `feature_image` | No | Featured image path |
+| `tags` | No | Array of tag names |
+| `draft` | No | Set `true` to hide from production |
+
+### Draft Posts
+
+Set `draft: true` to hide a post from production builds. Drafts are visible during development (`pnpm start`).
+
+## Deployment
+
+Configured for Netlify deployment via `netlify.toml`. Output goes to `_site/`.
+
+```bash
+pnpm run build
+```
+
+## Credits
+
+- [Eleventy](https://www.11ty.dev/) - Static site generator
+- [Liebling Theme](https://github.com/eddiesigner/liebling) - Original Ghost theme by Eduardo Gómez
+- [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog) - Base template

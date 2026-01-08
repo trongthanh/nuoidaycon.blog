@@ -1,0 +1,32 @@
+{#- Featured article card for homepage center column #}
+{#- Usage: {% include "partials/featured-card.njk" %} with post variable in scope #}
+<article class="m-featured-article {% if not post.data.feature_image %}no-picture{% endif %}">
+	{% if post.data.feature_image %}
+	<div class="m-featured-article__picture">
+		<a href="{{ post.url }}">
+			<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" loading="lazy">
+		</a>
+	</div>
+	{% endif %}
+	<div class="m-featured-article__content">
+		{% set primaryTag = post.data.tags | filterTagList | first %}
+		{% if primaryTag %}
+		<a href="/tags/{{ primaryTag | slugify }}/" class="m-featured-article__tag">{{ primaryTag }}</a>
+		{% endif %}
+		<a href="{{ post.url }}" class="m-featured-article__title-link">
+			<h2 class="m-featured-article__title">{{ post.data.title }}</h2>
+		</a>
+		{% if post.data.excerpt %}
+		<p class="m-featured-article__excerpt">{{ post.data.excerpt | truncate(150) }}</p>
+		{% elif post.data.description %}
+		<p class="m-featured-article__excerpt">{{ post.data.description | truncate(150) }}</p>
+		{% elif post.templateContent %}
+		<p class="m-featured-article__excerpt">{{ post.templateContent | striptags | truncate(150) }}</p>
+		{% endif %}
+		<div class="m-featured-article__meta">
+			<span>By {{ metadata.author.name }}</span>
+			<span>&mdash;</span>
+			<span>{{ post.date | readableDate("dd 'Th'LL yyyy") }}</span>
+		</div>
+	</div>
+</article>

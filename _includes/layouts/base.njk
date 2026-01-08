@@ -1,61 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ metadata.language }}">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title or metadata.title }}</title>
+	<meta name="description" content="{{ description or metadata.description }}">
 
-		{#- Atom and JSON feeds included by default #}
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+	{#- Atom and JSON feeds included by default #}
+	<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+	<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+	{#- Google Fonts #}
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-		{#-
-		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. You can add to them using `{% css %}`
-		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-		#}
+	{#- Theme CSS #}
+	<link rel="stylesheet" type="text/css" href="/theme/css/app.css">
+	<link rel="stylesheet" type="text/css" href="/theme/css/custom.css">
+	{% block styles %}{% endblock %}
 
-		{#- Add an arbitrary string to the bundle #}
-		{%- css %}* { box-sizing: border-box; }{% endcss %}
-		{#- Add the contents of a file to the bundle #}
-		{%- css %}{% include "public/css/index.css" %}{% endcss %}
-		{#- Or add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
+	{#- Inline font-face for icomoon icons #}
+	<style>
+		@font-face {
+			font-family: 'icomoon';
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+			src: url("/theme/fonts/icomoon/icomoon.eot?vukg2s");
+			src: url("/theme/fonts/icomoon/icomoon.eot?vukg2s#iefix") format('embedded-opentype'),
+			url("/theme/fonts/icomoon/icomoon.ttf?vukg2s") format('truetype'),
+			url("/theme/fonts/icomoon/icomoon.woff?vukg2s") format('woff'),
+			url("/theme/fonts/icomoon/icomoon.svg?vukg2s#icomoon") format('svg');
+		}
+	</style>
 
-		{#- Render the CSS bundle using Inlined CSS (for the fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
-		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
-	</head>
-	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
+	{% block head %}{% endblock %}
+</head>
+<body class="{{ bodyClass or '' }}">
+	{#- Header #}
+	{% include "partials/header.njk" %}
 
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+	{#- Main content #}
+	<main class="main-wrap">
+		{{ content | safe }}
+	</main>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
-		</header>
+	{#- Search modal #}
+	{% include "partials/search.njk" %}
 
-		<main id="skip">
-			{{ content | safe }}
-		</main>
+	{#- Footer #}
+	{% include "partials/footer.njk" %}
 
-		<footer></footer>
-
-		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
-	</body>
+	{#- Scripts #}
+	<script defer src="/theme/js/manifest.js"></script>
+	<script defer src="/theme/js/vendor.js"></script>
+	<script defer src="/theme/js/app.js"></script>
+	{% block scripts %}{% endblock %}
+</body>
 </html>
