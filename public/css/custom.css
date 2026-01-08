@@ -4,8 +4,10 @@
 
 /* Sans-serif font stack for UI elements, titles, navigation, tags, meta */
 :root {
-	--font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	--font-serif: "Source Serif 4", "Source Serif", Lora, Georgia, "Times New Roman", Times, serif;
+	--font-sans:
+		Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	--font-serif: 'Source Serif 4', 'Source Serif', Lora, Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Override body font to sans-serif (from current Source Serif Pro) */
@@ -14,7 +16,12 @@ body {
 }
 
 /* All headings use sans-serif */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-sans) !important;
 }
 
@@ -42,8 +49,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== END FONT CONFIGURATION ===== */
-
-
 
 /* Featured Section Grid - 3 column layout */
 .m-featured-section {
@@ -438,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
 	transition: background-color 0.2s ease;
 }
 
-.m-pagination .pagination-pages a[aria-current="page"] {
+.m-pagination .pagination-pages a[aria-current='page'] {
 	background-color: var(--secondary-subtle-color);
 	font-weight: 600;
 }
