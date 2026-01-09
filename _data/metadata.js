@@ -1,5 +1,5 @@
 module.exports = {
-	title: 'NDC',
+	title: 'Nuoi Day Con Blog',
 	url: 'https://nuoidaycon.blog',
 	language: 'vi',
 	description: 'Blog nuôi dạy con - Chia sẻ kinh nghiệm chăm sóc và nuôi dạy con',
