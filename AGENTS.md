@@ -68,17 +68,11 @@ _includes/
 _data/
 └── metadata.js             # Global site metadata (title, author, logo, social)
 
-public/                     # Static assets (passthrough copied to /)
-├── theme/                  # Ghost Liebling theme assets
-│   ├── css/                # Theme stylesheets (app.css, home.css, etc.)
-│   ├── js/                 # Theme JavaScript (app.js, vendor.js)
-│   ├── fonts/              # Icon fonts (icomoon)
-│   └── images/             # Theme images (default-bg.jpg, etc.)
-├── css/                    # Additional stylesheets
-└── images/                 # Blog images (organized by year/month)
-
-_ghost/                     # Original Ghost theme source (reference only)
-└── theme/                  # Liebling theme files
+public/                     # Static Ghost Liebling assets (passthrough copied to /)
+├── css/                    # Theme stylesheets (app.css, home.css, etc.)
+├── js/                     # Theme JavaScript (app.js, vendor.js)
+├── fonts/                  # Icon fonts (icomoon)
+└── images/                 # Theme and Blog images (organized by year/month) TODO: move content images to another folder
 
 _site/                      # Output directory (generated)
 ```
@@ -87,7 +81,6 @@ _site/                      # Output directory (generated)
 
 - **eleventy.config.js**: Main Eleventy configuration
 - **eleventy.config.drafts.js**: Draft post handling plugin (drafts only in dev)
-- **eleventy.config.images.js**: Image optimization plugin
 
 ### Input/Output Configuration
 
@@ -168,16 +161,17 @@ The site uses converted Ghost Liebling theme components:
 - `tags.css`: Tag page styles
 - `custom.css`: Custom 3-column featured layout
 
-### Image Shortcode
+### Image Optimization
 
-Defined in `eleventy.config.images.js`. Generates optimized responsive images with AVIF/WebP formats:
+Uses `@11ty/eleventy-img` v6.x with `eleventyImageTransformPlugin`. Images are optimized at build time using HTML attributes:
 
-```nunjucks
-{% image "/path/to/image.jpg", "alt text", [400, 800], "(min-width: 800px) 800px, 400px" %}
+```html
+<img src="/path/to/image.jpg" alt="alt text" eleventy:widths="400,800" eleventy:sizes="(min-width: 800px) 800px, 400px">
 ```
 
-- Outputs: `<picture>` with srcset, AVIF/WebP formats
-- Adds: `loading="lazy"`, `decoding="async"`, width/height attributes
+- Generates: AVIF, WebP, and JPEG formats with srcset
+- Adds: `loading="lazy"`, `decoding="async"` attributes
+- Configured in `eleventy.config.js` with `formats`, `widths`, and `htmlOptions`
 - Watch target: `content/**/*.{svg,webp,png,jpeg}`
 - Output directory: `_site/img/`
 

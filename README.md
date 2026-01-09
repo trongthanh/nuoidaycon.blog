@@ -54,7 +54,7 @@ pnpm run debug
 
 ### Technical
 - **Eleventy v3.1.2**: Static site generator with Nunjucks templating
-- **Image Optimization**: AVIF/WebP formats via `{% image %}` shortcode
+- **Image Optimization**: AVIF/WebP formats via `@11ty/eleventy-img` transform plugin (uses `eleventy:widths` HTML attributes)
 - **RSS Feeds**: Atom and JSON feeds
 - **Navigation**: Content-driven menu via eleventyNavigation plugin
 - **Live Reload**: Development server with hot reload
