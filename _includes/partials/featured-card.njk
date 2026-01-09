@@ -3,8 +3,8 @@
 <article class="m-featured-article {% if not post.data.feature_image %}no-picture{% endif %}">
 	{% if post.data.feature_image %}
 	<div class="m-featured-article__picture">
-		<a href="{{ post.url }}">
-			<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" loading="lazy">
+		<a href="{{ post.url }}" aria-hidden="true" tabindex="-1">
+			<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" eleventy:widths="600,1200" eleventy:sizes="(max-width: 1200px) 600px, 1200px">
 		</a>
 	</div>
 	{% endif %}
@@ -26,7 +26,7 @@
 		<div class="m-featured-article__meta">
 			<span>By {{ metadata.author.name }}</span>
 			<span>&mdash;</span>
-			<span>{{ post.date | readableDate("dd 'Th'LL yyyy") }}</span>
+			<span>{{ post.date | readableDate("dd/MM/yyyy") }}</span>
 		</div>
 	</div>
 </article>

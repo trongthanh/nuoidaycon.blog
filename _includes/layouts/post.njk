@@ -10,7 +10,9 @@ bodyClass: post-template
 {#- Hero section with feature image #}
 {% if feature_image %}
 <section class="m-hero with-picture">
-	<div class="m-hero__picture in-post" style="background-image: url({{ feature_image }});"></div>
+	<div class="m-hero__picture in-post">
+		<img src="{{ feature_image }}" alt="{{ title }}" eleventy:widths="800,1200,1600" eleventy:sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, 1600px">
+	</div>
 </section>
 {% endif %}
 
@@ -122,7 +124,7 @@ bodyClass: post-template
 
 		{#- Related posts (recommended) #}
 		{% if collections.posts %}
-		{% set relatedPosts = collections.posts | withoutDrafts | head(3) %}
+		{% set relatedPosts = collections.posts | head(3) %}
 		{% if relatedPosts.length > 0 %}
 		<section class="m-recommended">
 			<div class="l-wrapper in-recommended">

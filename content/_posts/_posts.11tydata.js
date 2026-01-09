@@ -2,6 +2,13 @@ module.exports = {
   tags: ['posts'],
   layout: 'layouts/post.njk',
   eleventyComputed: {
+    date: (data) => {
+      // Use date_published if date is not set
+      if (!data.date && data.date_published) {
+        return new Date(data.date_published);
+      }
+      return data.date;
+    },
     permalink: (data) => {
       // Skip drafts in production builds
       if (data.draft && !process.env.BUILD_DRAFTS) {

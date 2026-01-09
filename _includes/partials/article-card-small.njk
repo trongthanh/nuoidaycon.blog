@@ -2,8 +2,8 @@
 {#- Usage: {% include "partials/article-card-small.njk" %} with post variable in scope #}
 <article class="m-article-card-small">
 	{% if post.data.feature_image %}
-	<a href="{{ post.url }}" class="m-article-card-small__picture">
-		<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" loading="lazy">
+	<a href="{{ post.url }}" class="m-article-card-small__picture" aria-hidden="true" tabindex="-1">
+		<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" eleventy:widths="200,400" eleventy:sizes="(max-width: 400px) 200px, 400px">
 	</a>
 	{% endif %}
 	<div class="m-article-card-small__content">
@@ -13,7 +13,7 @@
 		<div class="m-article-card-small__meta">
 			<span>By {{ metadata.author.name }}</span>
 			<span>&mdash;</span>
-			<span>{{ post.date | readableDate("dd 'Th'LL yyyy") }}</span>
+			<span>{{ post.date | readableDate("dd/MM/yyyy") }}</span>
 		</div>
 	</div>
 </article>

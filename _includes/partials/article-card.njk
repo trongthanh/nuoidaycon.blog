@@ -4,7 +4,9 @@
 	<div class="m-article-card__picture">
 		<a href="{{ post.url }}" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
 		{% if post.data.feature_image %}
-		<img class="m-article-card__picture-background" src="{{ post.data.feature_image }}" loading="lazy" alt="{{ post.data.title }}">
+		<div class="m-article-card__picture-background">
+			<img src="{{ post.data.feature_image }}" alt="{{ post.data.title }}" eleventy:widths="400,800" eleventy:sizes="(max-width: 800px) 400px, 800px">
+		</div>
 		{% endif %}
 	</div>
 	<div class="m-article-card__info">
@@ -23,7 +25,7 @@
 		<div class="m-article-card__timestamp">
 			<span>By {{ metadata.author.name }}</span>
 			<span>&mdash;</span>
-			<span>{{ post.date | readableDate("dd 'Th'LL yyyy") }}</span>
+			<span>{{ post.date | readableDate("dd/MM/yyyy") }}</span>
 		</div>
 	</div>
 </article>

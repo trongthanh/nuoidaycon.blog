@@ -1,14 +1,14 @@
 const { DateTime } = require('luxon')
 const markdownItAnchor = require('markdown-it-anchor')
 
-const pluginRss = require('@11ty/eleventy-plugin-rss')
+const { feedPlugin } = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
-const pluginBundle = require('@11ty/eleventy-plugin-bundle')
+// const pluginBundle = require('@11ty/eleventy-plugin-bundle')
 const pluginNavigation = require('@11ty/eleventy-navigation')
-const { EleventyHtmlBasePlugin } = require('@11ty/eleventy')
+const { HtmlBasePlugin } = require('@11ty/eleventy')
+const { eleventyImageTransformPlugin } = require('@11ty/eleventy-img')
 
 const pluginDrafts = require('./eleventy.config.drafts.js')
-const pluginImages = require('./eleventy.config.images.js')
 
 module.exports = function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
@@ -26,16 +26,45 @@ module.exports = function (eleventyConfig) {
 
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts)
-	eleventyConfig.addPlugin(pluginImages)
+
+	// Eleventy Image transform plugin (v6.x)
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		formats: ['webp', 'jpeg'],
+		widths: ['auto'],
+		htmlOptions: {
+			imgAttributes: {
+				loading: 'lazy',
+				decoding: 'async',
+			},
+			pictureAttributes: {},
+		},
+	})
 
 	// Official plugins
-	eleventyConfig.addPlugin(pluginRss)
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: 'atom', // or "rss", "json"
+		outputPath: '/feed.xml',
+		collection: {
+			name: 'posts', // iterate over `collections.posts`
+			limit: 10, // 0 means no limit
+		},
+		metadata: {
+			language: 'en',
+			title: 'Blog Title',
+			subtitle: 'This is a longer description about your blog.',
+			base: 'https://example.com/',
+			author: {
+				name: 'Your Name',
+				email: '', // Optional
+			},
+		},
+	})
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 		preAttributes: { tabindex: 0 },
 	})
 	eleventyConfig.addPlugin(pluginNavigation)
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin)
-	eleventyConfig.addPlugin(pluginBundle)
+	eleventyConfig.addPlugin(HtmlBasePlugin)
+	eleventyConfig.addBundle('css')
 
 	// Filters
 	eleventyConfig.addFilter('readableDate', (dateObj, format, zone) => {
@@ -91,11 +120,6 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addFilter('filterTagList', function filterTagList(tags) {
 		return (tags || []).filter((tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1)
-	})
-
-	// Filter out draft posts from collections
-	eleventyConfig.addFilter('withoutDrafts', (collection) => {
-		return (collection || []).filter((item) => !item.data.draft)
 	})
 
 	// Customize Markdown library settings:

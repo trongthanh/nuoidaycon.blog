@@ -5,7 +5,7 @@
 		</button>
 		{% if metadata.logo %}
 		<a href="/" class="m-logo in-mobile-topbar">
-			<img src="{{ metadata.logo }}" alt="{{ metadata.title }}">
+			<img src="{{ metadata.logo }}" alt="{{ metadata.title }}" eleventy:widths="200,400" eleventy:sizes="200px">
 		</a>
 		{% else %}
 		<a href="/" class="m-site-name in-mobile-topbar">
@@ -29,7 +29,7 @@
 							{% if metadata.logo %}
 							<li class="only-desktop">
 								<a href="/" class="m-logo">
-									<img src="{{ metadata.logo }}" alt="{{ metadata.title }}">
+									<img src="{{ metadata.logo }}" alt="{{ metadata.title }}" eleventy:widths="200,400" eleventy:sizes="200px">
 								</a>
 							</li>
 							{% else %}

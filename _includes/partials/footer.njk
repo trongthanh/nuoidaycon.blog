@@ -6,18 +6,18 @@
 				<span>&nbsp; &bull; &nbsp;</span>
 				<span>Published with <a href="https://www.11ty.dev/" target="_blank" rel="noopener">Eleventy</a></span>
 			</p>
-			<nav class="m-footer-social">
-				{% if metadata.facebook %}
-				<a href="{{ metadata.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
-					<span class="icon-facebook"></span>
-				</a>
-				{% endif %}
-				{% if metadata.twitter %}
-				<a href="{{ metadata.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
-					<span class="icon-twitter"></span>
-				</a>
-				{% endif %}
-			</nav>
 		</div>
+		<nav class="m-footer-social">
+			{% if metadata.facebook %}
+			<a href="{{ metadata.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
+				<span class="icon-facebook"></span>
+			</a>
+			{% endif %}
+			{% if metadata.twitter %}
+			<a href="{{ metadata.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
+				<span class="icon-twitter"></span>
+			</a>
+			{% endif %}
+		</nav>
 	</div>
 </footer>
