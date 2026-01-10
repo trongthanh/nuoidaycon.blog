@@ -10,6 +10,8 @@ const { eleventyImageTransformPlugin } = require('@11ty/eleventy-img')
 
 const pluginDrafts = require('./eleventy.config.drafts.js')
 
+const metadata = require('./_data/metadata.js')
+
 module.exports = function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -49,13 +51,12 @@ module.exports = function (eleventyConfig) {
 			limit: 10, // 0 means no limit
 		},
 		metadata: {
-			language: 'en',
-			title: 'Blog Title',
-			subtitle: 'This is a longer description about your blog.',
-			base: 'https://example.com/',
+			language: 'vi',
+			title: metadata.title,
+			subtitle: metadata.description,
+			base: metadata.url,
 			author: {
-				name: 'Your Name',
-				email: '', // Optional
+				name: metadata.author.name,
 			},
 		},
 	})

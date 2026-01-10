@@ -1068,9 +1068,6 @@ fieldset {
 		margin-bottom: 40px;
 	}
 }
-.m-section-title.in-recommended {
-	margin-bottom: 0 !important;
-}
 .m-small-text {
 	color: var(--titles-color);
 	font-size: 0.875rem;
@@ -1242,7 +1239,6 @@ fieldset {
 	filter: invert(1);
 }
 .m-logo.in-mobile-topbar {
-	height: 30px;
 	margin: 0 20px;
 }
 .m-site-name.in-mobile-topbar {
