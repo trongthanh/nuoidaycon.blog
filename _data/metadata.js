@@ -4,8 +4,10 @@ module.exports = {
 	language: 'vi',
 	description: 'Blog nuôi dạy con - Chia sẻ kinh nghiệm chăm sóc và nuôi dạy con',
 	logo: '/images/2020/06/ndc-logo.png',
+	favicon: '/favicon.png',
 	facebook: 'https://www.facebook.com/deconlontunhien',
 	twitter: '',
+	gtag: 'G-GSRQS8456P',
 	author: {
 		name: 'Thảo Nguyễn',
 		email: '',

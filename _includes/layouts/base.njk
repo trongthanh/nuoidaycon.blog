@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title or metadata.title }}</title>
 	<meta name="description" content="{{ description or metadata.description }}">
+	<link rel="icon" type="image/png" href="{{ metadata.favicon }}">
 
 	{#- Atom and JSON feeds included by default #}
 	<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
@@ -33,8 +34,14 @@
 		}
 	</style>
 
+	{%- if metadata.gtag -%}
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ metadata.gtag }}"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '{{ metadata.gtag }}');</script>
+	{%- endif -%}
+
 	{% block head %}{% endblock %}
 </head>
+
 <body class="{{ bodyClass or '' }}">
 	{#- Header #}
 	{% include "partials/header.njk" %}
