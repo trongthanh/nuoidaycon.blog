@@ -1,8 +1,5 @@
 <header class="m-header js-header">
 	<div class="m-mobile-topbar" data-aos="fade-down">
-		<button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
-			<span class="icon-menu" aria-hidden="true"></span>
-		</button>
 		{% if metadata.logo %}
 		<a href="/" class="m-logo in-mobile-topbar">
 			<img src="{{ metadata.logo }}" alt="{{ metadata.title }}" eleventy:widths="200,400" eleventy:sizes="200px">
@@ -14,6 +11,13 @@
 		{% endif %}
 		<button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
 			<span class="icon-search" aria-hidden="true"></span>
+		</button>
+		<button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
+			<span class="hamburger" aria-hidden="true">
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+				<span class="hamburger-line"></span>
+			</span>
 		</button>
 	</div>
 

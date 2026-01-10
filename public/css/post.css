@@ -177,7 +177,8 @@
 	}
 }
 .l-post-content p img {
-	margin-bottom: 0 !important;
+	max-width: 100%;
+	height: auto;
 }
 .l-post-content b,
 .l-post-content strong {
@@ -194,6 +195,14 @@
 	font-size: 1.125rem;
 	padding-left: 20px;
 	margin: 0 0 20px;
+}
+.header-anchor {
+	visibility: hidden;
+}
+.l-post-content h2:hover .header-anchor,
+.l-post-content h3:hover .header-anchor,
+.l-post-content h4:hover .header-anchor {
+	visibility:visible;
 }
 @media only screen and (min-width: 48rem) {
 	.l-post-content ol,
@@ -212,23 +221,23 @@
 .l-post-content img {
 	display: block;
 	max-width: 100%;
-	margin: 0 auto 35px;
+	margin: 20px auto;
 }
 @media only screen and (min-width: 48rem) {
 	.l-post-content .kg-image,
 	.l-post-content img {
-		margin-bottom: 40px;
+		margin: 40px auto;
 	}
 }
 .l-post-content iframe {
 	max-width: 100%;
 }
 .l-post-content .fluid-width-video-wrapper {
-	margin: 0 auto 35px;
+	margin: 20px auto;
 }
 @media only screen and (min-width: 48rem) {
 	.l-post-content .fluid-width-video-wrapper {
-		margin-bottom: 40px;
+		margin-bottom: 40px auto;
 	}
 }
 .l-post-content.kg-image-card,
