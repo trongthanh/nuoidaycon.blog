@@ -118,7 +118,7 @@ Nhà mình thiệt hại 1tr với xe thăng bằng hiệu StarRider made-in-Vie
 
 ![](/images/2020/06/xe-tha-ng-ba--ng.jpg)
 
-![](/images/2020/06/827328726_ac2350cfe5_o.jpg)
+![](/images/2020/06/827328726_ac2350cfe5.jpg)
 
 Bé dưới 3 tuổi với xe thăng bằng. Và bé... mẹ hồi 23 tuổi với xe đạp. Niềm vui là như nhau!
 Đồ chơi là vô vàn và trò chơi là vô hạn, trên đây là top 10 món đồ chơi đơn giản, chơi lâu không chán và là những món đầu tư hiệu quả cho ba mẹ. Các ba mẹ có nhiều thời gian và tâm huyết cho việc chơi của con có thể tham khảo cuốn sách **Giờ chơi đến rồi** của tác giả Dương Mai Trang - Vũ Thị Thu Hằng để thử thêm nhiều trò chơi sáng tạo và kích thích 8 loại trí thông minh khác nhau của trẻ.
