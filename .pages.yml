@@ -1,5 +1,5 @@
 # Page CMS config https://app.pagescms.org
-media: public/images
+media: content/images
 content:
   - name: posts
     label: Posts
