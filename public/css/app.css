@@ -284,6 +284,7 @@ textarea {
 	--toggle-darkmode-button-color: #333;
 	--table-background-color-odd: #fafafa;
 	--table-head-border-bottom: #e2e2e2;
+	--logo-filter: invert(0);
 }
 [data-theme='dark'] {
 	--background-color: #111;
@@ -305,6 +306,7 @@ textarea {
 	--toggle-darkmode-button-color: #efd114;
 	--table-background-color-odd: #050505;
 	--table-head-border-bottom: #1d1d1d;
+	--logo-filter: invert(1);
 }
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme='light']) {
@@ -327,6 +329,7 @@ textarea {
 		--toggle-darkmode-button-color: #efd114;
 		--table-background-color-odd: #050505;
 		--table-head-border-bottom: #1d1d1d;
+		--logo-filter: invert(1);
 	}
 }
 .hide {
@@ -1236,7 +1239,7 @@ fieldset {
 	object-fit: contain;
 }
 [data-theme="dark"] .m-logo img {
-	filter: invert(1);
+	filter: var(--logo-filter);
 }
 .m-logo.in-mobile-topbar {
 	margin: 0 20px;
