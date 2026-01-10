@@ -7,7 +7,7 @@ tags:
   - Dạy con
   - Nuôi dạy con
 excerpt: Phải nói việc cho trẻ sử dụng thiết bị điện tử quá nhiều là "tệ nạn toàn cầu", làm dị dạng sự phát triển tự nhiên và toàn diện của trẻ em. Con bạn có "nghiện" không? Mình viết bài này để chia sẻ 5 bí kíp để cứu vớt các con trước nạn lạm dụng công nghệ hiện nay.
-feature_image: /images/2020/06/Screenshot-2020-06-23-at-12.44.50-PM.png
+feature_image: /images/2020/06/May-tinh.jpg
 ---
 
 Phải nói việc cho trẻ sử dụng thiết bị điện tử quá nhiều là “tệ nạn toàn cầu”, làm dị dạng sự phát triển tự nhiên và toàn diện của trẻ em. Mình thực sự rất thương cảm cho các con mỗi khi bước vào quán ăn, quán cafe ở khắp nơi trên thế giới và thấy 90% các con đang ngồi trước màn hình. Con bạn có “nghiện” không? Mình viết bài này để chia sẻ 5 bí kíp để cứu vớt các con trước nạn lạm dụng công nghệ hiện nay, thậm chí đơn giản tiết kiệm và phát xít nhất là không mua thiết bị điện tử, hehe.

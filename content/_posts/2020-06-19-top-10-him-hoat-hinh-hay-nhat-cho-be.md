@@ -7,7 +7,7 @@ tags:
   - Review
   - Dạy con
 excerpt: Từ khi bé 3 tuổi, mình bắt đầu cho con xem phim hoạt hình dài. Tuỳ vào thiên hướng thông minh của mỗi bé mà khả năng hiểu và cảm nhận là khác nhau. Sau đây là top 10 phim hoạt hình hay nhất mà các bé nhà mình cực kỳ yêu thích, xin chia sẻ cùng các ba mẹ.
-feature_image: /images/2020/06/peter-pan-ftr-1.jpg
+feature_image: /images/2020/06/Netflix-1.jpg
 ---
 
 Từ khi bé 3 tuổi, mình đã cho con xem các phim hoạt hình dài có cốt truyện. Tuỳ vào thiên hướng thông minh của bé mà khả năng hiểu và cảm nhận là khác nhau. Sau đây là **top 10 phim hoạt hình hay nhất **từ dễ đến khó mà các bé nhà mình cực kỳ yêu thích, có thể xem đi xem lại nhiều lần mà tiếng cười vẫn nguyên vẹn, xin chia sẻ cùng các ba mẹ.

@@ -7,14 +7,15 @@ tags:
   - Nuôi con
   - Nuôi dạy con
 excerpt: Rất nhiều mẹ, cũng như mình, hơi bối rối và thắc mắc đủ thứ về việc đánh răng cho bé, như khi nào thì bắt đầu đánh răng, đánh răng cho bé bằng cái gì, đánh răng cho bé như thế nào... Xin chia sẻ bí kíp đánh răng 2 bước của Cô Tiên Răng!
-feature_image: /images/2020/05/Ra-ng-xinh.jpg
+feature_image: /images/2020/06/Ra-ng-xinh-1.jpg
 ---
+<small>_Chú thích ảnh: Cả 3 mẹ con răng cỏ đều đẹp và đẹp đều :D_</small>
 
 Rất nhiều mẹ, cũng như mình, hơi bối rối và thắc mắc đủ thứ về việc đánh răng cho bé, như khi nào thì bắt đầu đánh răng, đánh răng cho bé bằng cái gì, đánh răng cho bé như thế nào... Dù là răng sữa sẽ thay khi bé lớn hơn, nhưng rất nhiều bé bị sâu răng, đau răng, nụ cười kém xinh không lung linh sống ảo được vì ba mẹ, ông bà, cô giúp việc chưa biết cách chăm sóc răng miệng cho bé.
-![](/images/2020/05/Ra-ng-xinh.jpg)Cả 3 mẹ con răng cỏ đều đẹp và đẹp đều :D
- Mình xin chia sẻ bí kíp đánh răng cho bé có 1 không 2 của Nha sĩ Lê Thị Thuỷ Tiên với con trai của cổ, và mình cũng kiên trì áp dụng với 2 đứa con nhà mình. May quá, chưa đứa nào bị sâu răng cả, cả con mẹ chúng nó cũng chưa luôn :D. Mời các mẹ tham khảo nhé!
 
-1. **Khi nào nên đánh răng cho bé?**
+Mình xin chia sẻ bí kíp đánh răng cho bé có 1 không 2 của Nha sĩ Lê Thị Thuỷ Tiên với con trai của cổ, và mình cũng kiên trì áp dụng với 2 đứa con nhà mình. May quá, chưa đứa nào bị sâu răng cả, cả con mẹ chúng nó cũng chưa luôn :D. Mời các mẹ tham khảo nhé!
+
+## 1. Khi nào nên đánh răng cho bé?
 
 Ngay khi có răng. Tất nhiên rồi. Sâu răng không đợi tuổi các mẹ ạ.
 
@@ -24,16 +25,16 @@ Nếu mẹ nào cho con ăn ngọt, uống sữa có đường, nêm nếm đư�
 
 Các bé hay bú sữa đêm có hàm răng rất... chán. Nên các mẹ cố gắng tập cho con cai sữa đêm càng sớm càng tốt, đừng lo con đói ban đêm vì ngoài sâu răng còn có nhiều hệ luỵ khác. Bé lớn nhà mình được bà ngoại cho ăn sô cô la đắng vào buổi sáng và chủ quan ko đánh răng, sau vài ngày thì mình mới phát hiện răng cửa trên của bé bị mẻ 1 miếng dù lúc đó bé mới chỉ có 2 răng trên và 2 răng dưới. Răng của các bé lúc này còn yếu nên ăn đồ ngọt rất dễ bị sâu, mẻ. Các mẹ và người nhà chăm sóc bé nên tránh cho bé ăn ngọt vì nhiều lý do, trong đó có sâu răng và dễ bị ốm bệnh.
 
-**2. Đánh răng cho bé như thế nào?**
+## 2. Đánh răng cho bé như thế nào?
 
 Nha sĩ Thuỷ Tiên - mình hay gọi đùa là Cô Tiên Răng, cô bạn khéo tay học Chuyên Anh - Phổ thông Năng khiếu TPHCM mà đậu đại học Á khoa Nha ĐH Y dược làm bao nhiêu đứa "rớt hàm" ngưỡng mộ, có chia sẻ bí kíp đánh răng cho bé gồm 2 bước:
 
 - Đánh răng
 - Chà răng để mặt răng bóng -> thức ăn khó bám vào mặt răng gây sâu răng
 
-**2.1. ĐÁNH RĂNG CHO BÉ:**
+### 2.1. ĐÁNH RĂNG CHO BÉ:
 
-2.1.1. Dụng cụ đánh răng cho bé
+### 2.1.1. Dụng cụ đánh răng cho bé
 
 Cô Tiên Răng khuyến khích chúng ta giới thiệu bàn chải mềm nhỏ cho bé càng sớm càng tốt sau khi bé có răng và khi bé bắt đầu biết phun ra theo hướng dẫn của ba mẹ, thường là khoảng 18 tháng, thì có thể cho bé dùng kem đánh răng không có hoặc ít flouride loại dành cho em bé, có thể nuốt được.
 
@@ -41,7 +42,7 @@ Cha mẹ có điều kiện thì có thể mua kem đánh răng hữu cơ nhập
 
 Lưu ý là nếu bé dùng kem đánh răng nhiều flo như của người lớn thì khi bé nuốt kem sẽ tích tụ trong cơ thể, sau này răng vĩnh viễn của bé mọc lên có thể sẽ bị xỉn màu. Mình có từng tham khảo thông tin này ở website của các cơ quan y tế các nước Mỹ Úc nhưng mình không có thời gian tìm lại nguồn. Các mẹ có thể kiểm chứng lại và chọn kem ít flo cho các con nhé!
 
-2.1.2. Cách đánh răng cho bé
+### 2.1.2. Cách đánh răng cho bé
 
 Chải kỹ tất cả các mặt răng, đặc biệt là mặt nhai của răng hàm.
 
@@ -51,7 +52,7 @@ Chải kỹ tất cả các mặt răng, đặc biệt là mặt nhai của răn
 
 Đánh nhẹ mặt lưỡi và vòm miệng. Súc miệng là xong.
 
-**2.2. CHÀ BÓNG MẶT RĂNG**
+### 2.2. CHÀ BÓNG MẶT RĂNG
 
 Theo cô Tiên Răng thì đây là "bí kíp" không phải ai cũng biết để có một hàm răng khoẻ mạnh và xinh đẹp cho cả người lớn và trẻ em. Như mình nói ở trên, chà răng để mặt răng bóng thì thức ăn sẽ khó bám vào mặt răng và giảm đáng kể tình trạng hư và ăn mòn răng, đặc biệt là với các bé nhỏ vì chúng ta rất khó đánh răng kỹ lưỡng bằng bàn chải cho các bé liên tục ngọ nguậy.
 
@@ -63,7 +64,7 @@ Cảm nhận của mình là bước đánh răng giúp lấy thức ăn ra kh�
 
 Làm xong bước này thì các mẹ yên tâm là răng con đã "sạch bong kin kít".
 
-**3. Mình dụ bé đánh răng như thế nào?**
+## 3. Mình dụ bé đánh răng như thế nào?
 
 Ngay khi bé có răng, trước khi đi ngủ giấc tối, mình cho bé lên cái ghế nhún và vừa giỡn với bé vừa xỏ tay vào gạc rơ lưỡi thấm nước muối. Mình giả bộ làm con sâu màu trắng nhúc nhích cho bé xem rồi bé tự cầm tay đưa vào miệng nếm thử, cắn thử. Mình tranh thủ chà và kéo dài sự thích thú của bé... cho đến khi bé chán.
 

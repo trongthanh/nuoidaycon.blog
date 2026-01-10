@@ -7,21 +7,22 @@ tags:
   - Nuôi con
   - Nuôi dạy con
 excerpt: Tắc tia sữa là nỗi sợ lớn nhất của nhiều bà mẹ nuôi con bằng sữa mẹ. Đây là đường tắt mà mình đã đi để vượt qua 2 con trăng, mẹ nào cần thì lượm bí kíp nhé.
-feature_image: /images/2019/09/breastfeed-unsplash.jpg
+feature_image: /images/2020/07/Bu--me--trong-pho---co--.jpg
 ---
 
-![](/images/2019/09/breastfeed-unsplash.jpg)Photo by [Luiza Braun](https://unsplash.com/@luizabraun?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/breastfeeding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+![](/images/2019/09/breastfeed-unsplash.jpg)_Photo by [Luiza Braun](https://unsplash.com/@luizabraun?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/breastfeeding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_
+
 Tắc tia sữa là nỗi sợ lớn nhất của nhiều bà mẹ nuôi con bằng sữa mẹ. Đây là đường tắt mà mình đã đi để vượt qua. Trong đó, mình đặc biệt nhấn mạnh việc cho **bé bú trực tiếp** và mẹ đổi tư thế bú, làm sao để **lưỡi và môi dưới  của bé đặt ngay tia sữa bị tắc**, là cách xử lý nhanh gọn lẹ và hiệu quả nhất.
 
 Mình viết bài này hoàn toàn từ kinh nghiệm thực tế của bản thân và bạn bè, dù trên mạng có hàng triệu bài để tham khảo nhưng quá nhiều. Mẹ nào cần “xin 500 đồng” mẹo chữa thì thử xem đồ rẻ thế này có “xài” được không nhé!
 
-**2 nguyên nhân mà mẹ sữa bị tắc tia** phổ biến nhất mình từng trải qua là:
+## 2 nguyên nhân mà mẹ sữa bị tắc tia phổ biến nhất
 
-1. **Tia sữa chưa thông khi mới vừa sinh bé**
+### 1. Tia sữa chưa thông khi mới vừa sinh bé
 
 Trong vô vàn cảm xúc diễn ra những ngày đầu tiên khi đón con yêu về đội của mẹ, thì có niềm vui sữa về và sau đó là niềm… đau vì sữa về căng cả vú mà không ra được. Đặc biệt là với bé đầu tiên, bộ ngực sau gần 30 năm "phát huy tác dụng", cơ thể mẹ đã sản xuất sữa nhưng các đường ống rỉ sét lâu ngày chưa sử dụng nên tắc nghẽn. Bên cạnh đó, khi mới sinh bé, kể cả con thứ, cơ thể mẹ cũng chưa biết lượng sữa bé bú là bao nhiêu để điều tiết cho phù hợp, thôi cho hào phóng chút cho con bú thoải mái. Thế là... kẹt xe.
 
-2. **Lượng sữa trong bầu vú quá nhiều so với nhu cầu của bé/khả năng hút**
+### 2. Lượng sữa trong bầu vú quá nhiều so với nhu cầu của bé/khả năng hút
 
 Khi bé bú mẹ trực tiếp, có những ngày bé bú ít hơn bình thường, ví dụ như bé bị cảm cúm, mệt, đầy hơi, đau bụng... và cơ thể mẹ vẫn tiết sữa ra đều đặn như trước, nên bầu vú mẹ bị căng đau vì lượng sữa tích tụ quá nhiều.
 
@@ -29,9 +30,11 @@ Với những mẹ dùng máy hút sữa, lượng sữa hút bằng máy chỉ 
 
 ---
 
+## Cách xử lý và phòng ngừa
+
 Với mỗi nguyên nhân và tình huống, mình đã áp dụng **cách xử lý khác nhau**, và phòng bệnh hơn chữa bệnh các mẹ nhé. Mình liệt kê ra theo tuần tự thế này cho các mẹ sữa dễ hình dung theo trình tự thời gian:
 
-1. **Mang thai từ tuần 37 trở đi: vệ sinh đầu ti thật kỹ **
+### 1. Mang thai từ tuần 37 trở đi: vệ sinh đầu ti thật kỹ
 
 Nhiều mẹ thấy căng tức ngực, có sữa non, hoặc chất tiết dẻo dẻo trắng trắng chui ra đầu ti sớm. Bác sĩ của mình khuyên luôn vệ sinh đầu ti sạch sẽ bằng khăn màn (khăn sữa). Mình thì từ tuần 37 mới bắt đầu vệ sinh kỹ hơn, dùng khăn lau qua đầu ti, rồi dùng tay cầm đầu ti lên săm soi để moi ra hết những cặn đóng ở đầu ti, đồng thời dùng tay massage nhẹ nhàng bầu vú khi tắm. Việc này sẽ giúp đầu ra của tia sữa được thông thoáng, sạch sẽ khi bé ra đời. Bé sẽ dễ bú được sữa non và mẹ đỡ bị tắc tia hơn.
 
@@ -41,13 +44,13 @@ Link tham khảo bằng tiếng Anh, có hình minh hoạ: [https://www.wikihow.
 
 Mình bé đầu sinh mổ, bé thứ 2 muốn sinh thường mà tuần 39 rồi chưa thấy nhúc nhích gì nên cũng kích thích đầu ti cho mau có dấu hiệu. Khoảng 2 ngày sau là mình chuyển dạ, nhưng mà đau đẻ 1 ngày bé cũng ko xuống được do khung chậu hẹp nên lại mổ, hehe. Tuy nhiên, phải công nhận là cách này đơn giản mà hiệu nghiệm, WikiHow còn dặn các mẹ phải có điện thoại và người nhà kế bên để đi đẻ ngay cho kịp.
 
-**2**.** Những ngày đầu sau sinh: chuẩn bị máy hút sữa hoặc tìm hiểu cách vắt sữa bằng tay để dùng ngay khi cần**
+### 2. Những ngày đầu sau sinh: chuẩn bị máy hút sữa hoặc tìm hiểu cách vắt sữa bằng tay để dùng ngay khi cần
 
 Cách vắt sữa bằng tay mình vừa nói ở trên. Đơn giản, tiết kiệm, nhưng mất thời gian và mẹ phải ngồi lâu. Sau sinh còn đau đớn đủ thứ, nên các mẹ cố gắng mượn tạm máy ai đó 1-2 tuần đầu, mẹ nào có điều kiện thì mua luôn máy hút tay, hút điện, 1 bên 2 bên gì cũng được.
 
 Tuỳ cơ địa từng mẹ, sau khi sinh sữa sẽ về sớm hay muộn, nhưng chắc chắn là sẽ về. Với mình, sinh mổ 3-4 ngày sữa mới về, trong lúc chờ sữa mình cho con mút và vắt bằng máy 15-20ph dù chẳng được gì nhưng là để kích thích. Sau đó thì về ào ạt căng hết 2 bình mà con bú không hết nên phải vắt ra ngay sau mỗi lần con bú. Lúc sữa vừa về cũng là lúc hay bị tắc tia nhất nên cần nhất máy vắt sữa là lúc này.
 
-**3. Con bú mút là số 1**
+### 3. Con bú mút là số 1
 
 Mẹ tranh thủ cho bé bú mẹ trực tiếp, càng sớm càng tốt sau khi bé ra đời và duy trì càng lâu càng tốt. Với 2 bé nhà mình, máy hút sữa của mình chỉ dùng trong khoảng 1-2 tuần sau sinh khi cơ thể chưa điều tiết đúng lượng bé bú, và dùng sơ-cua tránh tắc sữa trong trường hợp bé bị ốm hay bú ít. Còn đâu, bé bú trực tiếp chính là cứu cánh cho tất cả mọi vấn đề, trong đó có tắc tia sữa.
 ![](/images/2019/09/image.png)Minh hoạ các tia sữa khi bé bú mẹ. Nguồn hình/Image Source: [https://duniaanak.org](https://duniaanak.org/)
@@ -59,17 +62,20 @@ Tự nhiên cũng đã sinh ra sữa mẹ kỳ diệu có oxytocin, giúp bé ng
 
 Nên các mẹ cố gắng cho bé bú trực tiếp nhé. Khi nào gần đi làm thì tập bú bình sau. Mẹ đi làm sớm có thể duy trì cho bé bú bình (sữa mẹ vắt ra) 1 lần/ngày để bé quen, nhưng đây có thể là con dao 2 lưỡi vì một số bé có xu hướng thích bú bình hơn -> mẹ quanh quẩn vắt sữa cả ngày -> mẹ mệt -> sớm cho con bú sữa công thức.
 
-**4. Tư thế cho con bú giải thoát cơn đau tắc ngay tức thì**
+### 4. Tư thế cho con bú giải thoát cơn đau tắc ngay tức thì
 
 Nếu khi mới sinh, mình thường bị căng nóng râm ran hết cả bầu vú do sữa về quá nhiều, thì trong những ngày tháng sau đó, mình thỉnh thoảng dễ bị tắc một số tia sữa nhất định khi con bị ốm sốt, con vẫn bú nhưng mút yếu, bú ít.
 
 Quan trọng nhất lúc này là mẹ sờ nắn bầu vú của mình và xác định được tia nào bị cương cứng, đau nhức. Mình dùng tay day ấn từ trong bầu xem tia nào bị cứng và lần tìm ra dần phía đầu ti để biết bé bú chỗ nào ở đầu ti thì sẽ giải phóng được tia sữa bị tắc ấy.
 
 Khi bé bú thì lưỡi của bé đóng vai trò quan trọng, làm điểm tựa để bé mút được mạnh hơn, do đó mình cảm nhận rõ là những tia sữa ở vị trí môi dưới của bé sẽ được hút nhiều hơn những tia khác. Vì vậy khi bị tắc tia sữa, mình tranh thủ khi bé đói, tiến hành chỉnh tư thế cho con bú để làm sao **lưỡi và môi dưới của bé nằm đúng vị trí tia sữa bị tắc**. Mẹ có thể cho bé nằm ngửa và mẹ xoay người chống tay chân xuống giường để đến đúng vị trí mong muốn. Hoặc mẹ nhờ người nhà bế bé để mẹ xoay nếu bé ko hợp tác.
-![](/images/2019/09/Tu--the---bu--na--m-1.jpg)Trị tắc tia sữa: xoay tư thế cho bú để lưỡi và môi dưới của bé nằm đúng vị trí tia sữa bị tắc
+
+![](/images/2019/09/Tu--the---bu--na--m-1.jpg)
+
+Trị tắc tia sữa: xoay tư thế cho bú để lưỡi và môi dưới của bé nằm đúng vị trí tia sữa bị tắc
 Trông thì hơi kỳ dị, nhưng mình đảm bảo với các mẹ là nếu môi dưới của bé đặt đúng tia sữa đang bị căng tắc, thì **bé mút phát nào là mẹ thấy nhẹ cả người phát đó luôn**. Kỳ diệu lắm luôn ấy, lúc đó mình phải nói cảm ơn con thành tiếng.
 
-**5. Can thiệp từ bên ngoài giảm đau, giảm tiết sữa**
+### 5. Can thiệp từ bên ngoài giảm đau, giảm tiết sữa
 
 Đây chính là những điều các mẹ tìm thấy trên Google và kinh nghiệm của người đi trước nhiều nhất. Nhưng với mình, những cách này đều là giải pháp tạm thời, hỗ trợ chứ không giải quyết được sự cấp bách của cơn đau tắc tia. Những cách đó mình gom chung lại là giảm đau tức thời và giảm tiết sữa.
 
@@ -80,7 +86,7 @@ Trông thì hơi kỳ dị, nhưng mình đảm bảo với các mẹ là nếu 
 
 Với những thức ăn, đồ uống, mình đặc biệt nhấn mạnh là không nên lạm dụng lâu dài. Lạm dụng có thể làm giảm sữa, tiêu sữa của con luôn. Ví dụ mình bị tắc tia lúc mới sinh bé đầu và bà ngoại cho mình uống nước lá đinh lăng phơi khô với tác dụng là "thông sữa", có vẻ cũng có tác dụng vì lúc đấy làm hết mọi cái để đỡ đau nên chẳng biết cái nào là tác dụng chính. Sau đó mình bị thiếu sữa và bà vẫn tiếp tục cho uống với công dụng tăng sữa, nhưng tới 2 tháng vẫn thiếu sữa. Cuối cùng mình bỏ uống linh tinh, bỏ bú bình, bỏ đong đếm bé bú được bao nhiêu, chỉ cho bé bú mẹ, mới đủ sữa cho con. Bé bú mới là giải pháp an toàn, triệt để - mẹ cứ quẳng gánh lo đi mà cho bú.
 
-**6. Đau không chịu nổi, sưng, sốt — đến bệnh viện ngay**
+### 6. Đau không chịu nổi, sưng, sốt — đến bệnh viện ngay
 
 Tới nước này thì hãy để những người có chuyên môn xử lý. Mình chỉ kể chuyện nghe chơi thôi.
 

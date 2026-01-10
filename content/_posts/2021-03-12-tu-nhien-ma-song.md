@@ -7,9 +7,8 @@ tags: Tự nhiên mà sống
 feature_image: /images/2021/03/Stream.jpg
 ---
 
-![](/images/2021/03/Stream.jpg)
+<small><em>Photo by [Alexander Schimmeck](https://unsplash.com/@alschim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](/s/photos/tropical-stream?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)</em></small>
 
-Photo by [Alexander Schimmeck](https://unsplash.com/@alschim?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](/s/photos/tropical-stream?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 "Hãy uống nước từ dòng suối nơi ngựa uống
 
 Con ngựa chẳng bao giờ uống nước xấu đâu
