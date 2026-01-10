@@ -106,6 +106,10 @@ bodyClass: post-template page-template
 	</div>
 </article>
 
+{% block scripts %}
+<script defer src="/js/post.js"></script>
+{% endblock %}
+
 {#- Styles for updated date #}
 {%- css %}
 .m-page-updated {
