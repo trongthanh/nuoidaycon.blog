@@ -39,3 +39,7 @@ Và hạnh phúc thay, mình đang được làm cả 2 việc mình yêu mỗi 
 Cảm ơn đời.
 
 Và cảm ơn bạn đã đọc. Mong bạn theo dõi, comment và feedback cho mình để mình có thể học hỏi thêm và có ích hơn cho mọi người!
+
+Thông tin liên hệ:
+
+- Facebook: [@thao.rachel.nguyen](https://www.facebook.com/thao.rachel.nguyen)

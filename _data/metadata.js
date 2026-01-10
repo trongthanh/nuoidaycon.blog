@@ -15,7 +15,7 @@ module.exports = {
 		bio: 'Một bà mẹ 2 con chia sẻ về những điều căn bản, đơn giản và đem lại thanh thản trong việc chăm sóc, dạy dỗ con cái và cuộc sống thường ngày.',
 		image: '/images/thao-avatar.png',
 		website: '',
-		facebook: 'deconlontunhien',
+		facebook: 'thao.rachel.nguyen',
 		twitter: '',
 	},
 }
