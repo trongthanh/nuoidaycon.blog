@@ -12,7 +12,8 @@ excerpt: |
 feature_image: /images/2020/08/septian-simon-OWSC2LRuO8U-unsplash-1.jpg
 ---
 
-![](/images/2020/08/septian-simon-OWSC2LRuO8U-unsplash-1.jpg)Photo by [Septian simon](https://unsplash.com/@septiansimon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/make-up-asian-woman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+<small>_Cover photo by [Septian simon](https://unsplash.com/@septiansimon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/make-up-asian-woman?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)_</small>
+
 Ngồi làm việc ở quán cafe bên trong một Trung tâm mua sắm lớn, tôi bất chợt nhìn bâng quơ ra ngoài trong lúc suy nghĩ. Oạch, hết cả hồn! 2 cô bé còn mặc đồng phục học sinh, cao chưa đầy mét bốn mươi, khuôn mặt ngây thơ, da dẻ mịn màng… Đáng lẽ là đẹp! Ngoại trừ 2 đôi môi với 2 màu đỏ nâu và tím đậm. Chắc phim kinh dị nào đó đang hot trong giới tuổi teen nhỉ?
 
 Thỉnh thoảng lướt Facebook, tôi cũng thấy không ít bạn bè mình chụp hình đăng ảnh, ăn bận trang điểm lộng lẫy. Không ít chị em bạn bè xăm mày xăm môi, nâng mi sữa mũi. Không phải là không đẹp, nhưng bình thường bản thân tôi đã gặp họ, đã biết họ, và vẫn luôn thấy họ đẹp rồi.
