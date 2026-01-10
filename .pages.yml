@@ -15,27 +15,26 @@ content:
       - { name: description, label: Short Description, type: text }
       - { name: excerpt, label: Excerpt, type: text }
       - { name: feature_image, label: Feature Image, type: image }
-      - { name: date, label: Date, type: date }
-      - { name: date_published, label: Date Published (ISO), type: datetime }
-      - { name: date_updated, label: Date Updated (ISO), type: datetime }
+      - { name: date_published, label: Date Published (ISO), type: date }
+      - { name: date_updated, label: Date Updated (ISO), type: date }
       - { name: draft, label: Draft, type: boolean }
       - name: tags
         label: Tags
         type: string
         list: true
-        description: "Common tags: Nuôi dạy con, Nuôi con, Dạy con, Review, Chuyện chị em, Tự nhiên mà sống"
+        description: 'Common tags: Nuôi dạy con, Nuôi con, Dạy con, Review, Chuyện chị em, Tự nhiên mà sống'
       - { name: body, label: Body, type: rich-text }
 
   - name: gioi-thieu
-    label: About Page
+    label: 'Giới Thiệu'
     type: file
     path: content/gioi-thieu/index.md
     fields:
       - { name: layout, type: string, hidden: true, default: layouts/page.njk }
       - { name: title, label: Title, type: string }
       - { name: slug, label: Slug, type: string }
-      - { name: date_published, label: Date Published, type: datetime }
-      - { name: date_updated, label: Date Updated, type: datetime }
+      - { name: date_published, label: Date Published, type: date }
+      - { name: date_updated, label: Date Updated, type: date }
       - { name: show_latest_posts, label: Show Latest Posts, type: boolean }
       - name: eleventyNavigation
         label: Navigation
@@ -46,7 +45,7 @@ content:
       - { name: body, label: Body, type: rich-text }
 
   - name: nuoi-day-con
-    label: Parenting Collection Page
+    label: 'Góc Nuôi Dạy Con'
     type: file
     path: content/nuoi-day-con/index.njk
     format: yaml-frontmatter
@@ -64,7 +63,7 @@ content:
           - { name: order, label: Order, type: number }
 
   - name: chuyen-chi-em
-    label: Women's Corner Collection Page
+    label: 'Góc Chị Em'
     type: file
     path: content/chuyen-chi-em/index.njk
     format: yaml-frontmatter
@@ -82,7 +81,7 @@ content:
           - { name: order, label: Order, type: number }
 
   - name: review
-    label: Review Collection Page
+    label: Góc Review
     type: file
     path: content/review/index.njk
     format: yaml-frontmatter
