@@ -271,7 +271,7 @@ textarea {
 	--primary-subtle-color: #0470ee;
 	--secondary-subtle-color: #f4f8fd;
 	--titles-color: #4b4b4b;
-	--link-color: #293951;
+	--link-color: #2e5083;
 	--primary-border-color: #9b9b9b;
 	--secondary-border-color: #f0f8ff;
 	--article-shadow-normal: 0 10px 10px rgba(0, 0, 0, 0.08);
@@ -1278,7 +1278,8 @@ fieldset {
 .m-nav__left li {
 	color: var(--titles-color);
 	letter-spacing: 0.3px;
-	font-size: 1.125rem;
+	font-size: 1rem;
+	font-weight: 400;
 	margin-bottom: 15px;
 }
 @media only screen and (min-width: 48rem) {
@@ -1297,10 +1298,13 @@ fieldset {
 	}
 }
 .m-nav__left li.nav-current {
-	font-weight: 600;
+	font-weight: 700;
 }
 .m-nav__left li a {
 	color: inherit;
+}
+.m-nav__left li a:hover {
+	color: var(--link-color);
 }
 .m-nav__left li.more a {
 	display: inline-flex;

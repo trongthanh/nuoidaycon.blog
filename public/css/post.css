@@ -185,8 +185,10 @@
 	font-weight: 600;
 }
 .l-post-content a {
-	color: var(--primary-foreground-color);
+	color: var(--link-color);
 	text-decoration: underline;
+	text-decoration-style:solid;
+	text-decoration-thickness: 1px;
 }
 .l-post-content ol,
 .l-post-content ul {

@@ -1,0 +1,122 @@
+---
+layout: layouts/base.njk
+bodyClass: post-template page-template
+---
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+{% endblock %}
+
+{#- Hero section with feature image #}
+{% if feature_image %}
+<section class="m-hero with-picture">
+	<div class="m-hero__picture in-post">
+		<img src="{{ feature_image }}" alt="{{ title }}" eleventy:widths="800,1200,1600" eleventy:sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, 1600px">
+	</div>
+</section>
+{% endif %}
+
+<article>
+	<div class="l-content in-post">
+		<div class="l-wrapper in-post {% if not feature_image %}no-image{% endif %}">
+			<div class="l-post-content">
+				<header class="m-heading">
+					<h1 class="m-heading__title in-post">{{ title }}</h1>
+					{% set primaryTag = tags | filterTagList | first %}
+					{% if primaryTag %}
+					<div class="m-heading__meta">
+						<a href="/tags/{{ primaryTag | slugify }}/" class="m-heading__meta__tag">{{ primaryTag }}</a>
+					</div>
+					{% endif %}
+				</header>
+
+				<div class="pos-relative js-post-content">
+					{#- Share buttons #}
+					<div class="m-share">
+						<div class="m-share__content js-sticky">
+							<a href="https://www.facebook.com/sharer/sharer.php?u={{ metadata.url }}{{ page.url }}"
+								class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+								<span class="icon-facebook" aria-hidden="true"></span>
+							</a>
+							<a href="https://x.com/intent/post?text={{ title | urlencode }}&url={{ metadata.url }}{{ page.url }}"
+								class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+								<span class="icon-twitter" aria-hidden="true"></span>
+							</a>
+							<button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
+								<span class="icon-arrow-top" aria-hidden="true"></span>
+								<svg aria-hidden="true">
+									<circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					{#- Post content #}
+					<div class="post-content">
+						{{ content | safe }}
+					</div>
+
+					{#- Tags list #}
+					{% set postTags = tags | filterTagList %}
+					{% if postTags.length > 0 %}
+					<section class="m-tags in-post">
+						<h3 class="m-submenu-title">Tags</h3>
+						<ul>
+							{% for tag in postTags %}
+							<li>
+								<a href="/tags/{{ tag | slugify }}/" title="{{ tag }}">{{ tag }}</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</section>
+					{% endif %}
+
+					{#- Updated date at bottom #}
+					{% if date_updated %}
+					<div class="m-page-updated">
+						<span class="m-page-updated__label">Updated:</span>
+						<time datetime="{{ date_updated | htmlDateString }}">{{ date_updated | readableDate("dd/LL/yyyy") }}</time>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+
+		{#- Latest posts section (togglable via show_latest_posts frontmatter, default off) #}
+		{% if show_latest_posts and collections.posts %}
+		{% set latestPosts = collections.posts | reverse | head(4) %}
+		{% if latestPosts.length > 0 %}
+		<section class="m-recommended">
+			<div class="l-wrapper in-recommended">
+				<h3 class="m-section-title in-recommended">Mới nhất</h3>
+				<div class="m-recommended-articles">
+					<div class="l-grid centered">
+						{% for latestPost in latestPosts %}
+						{% if latestPost.url != page.url %}
+						{% set post = latestPost %}
+						{% include "partials/article-card.njk" %}
+						{% endif %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+		{% endif %}
+		{% endif %}
+	</div>
+</article>
+
+{#- Styles for updated date #}
+{%- css %}
+.m-page-updated {
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--lighter-gray-color, #e5e5e5);
+	font-size: 0.875rem;
+	color: var(--secondary-text-color, #738a94);
+}
+
+.m-page-updated__label {
+	font-weight: 500;
+}
+{% endcss %}
