@@ -1,5 +1,5 @@
 module.exports = {
-	title: 'Nuoi Day Con Blog',
+	title: 'Nuôi Dạy Con Blog',
 	url: 'https://nuoidaycon.blog',
 	language: 'vi',
 	description: 'Blog nuôi dạy con - Chia sẻ kinh nghiệm chăm sóc và nuôi dạy con',
@@ -7,11 +7,11 @@ module.exports = {
 	facebook: 'https://www.facebook.com/deconlontunhien',
 	twitter: '',
 	author: {
-		name: 'Thao Nguyen',
+		name: 'Thảo Nguyễn',
 		email: '',
 		url: 'https://nuoidaycon.blog',
 		bio: 'Một bà mẹ 2 con chia sẻ về những điều căn bản, đơn giản và đem lại thanh thản trong việc chăm sóc, dạy dỗ con cái và cuộc sống thường ngày.',
-		image: '',
+		image: '/images/thao-avatar.png',
 		website: '',
 		facebook: 'deconlontunhien',
 		twitter: '',
