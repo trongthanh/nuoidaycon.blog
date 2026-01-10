@@ -1,22 +1,23 @@
 # Page CMS config https://app.pagescms.org
-media: content/images
+media:
+  input: content/images
+  output: images
 content:
   - name: posts
     label: Posts
     type: collection
     path: content/_posts
     view:
-      fields: [title, draft, date, tags]
+      fields: [title, draft, date_published, tags]
       primary: title
-      sort: [date, desc]
+      sort: [date_published, desc]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: slug, label: Slug (URL), type: string }
-      - { name: description, label: Short Description, type: text }
       - { name: excerpt, label: Excerpt, type: text }
       - { name: feature_image, label: Feature Image, type: image }
-      - { name: date_published, label: Date Published (ISO), type: date }
-      - { name: date_updated, label: Date Updated (ISO), type: date }
+      - { name: date_published, label: Date Published (ISO), type: date, options: { time: true } }
+      - { name: date_updated, label: Date Updated (ISO), type: date, options: { time: true } }
       - { name: draft, label: Draft, type: boolean }
       - name: tags
         label: Tags
@@ -33,8 +34,8 @@ content:
       - { name: layout, type: string, hidden: true, default: layouts/page.njk }
       - { name: title, label: Title, type: string }
       - { name: slug, label: Slug, type: string }
-      - { name: date_published, label: Date Published, type: date }
-      - { name: date_updated, label: Date Updated, type: date }
+      - { name: date_published, label: Date Published, type: date, options: { time: true } }
+      - { name: date_updated, label: Date Updated, type: date, options: { time: true } }
       - { name: show_latest_posts, label: Show Latest Posts, type: boolean }
       - name: eleventyNavigation
         label: Navigation
@@ -102,23 +103,10 @@ content:
     label: Site Settings
     type: file
     path: _data/metadata.js
-    format: javascript
+    format: code
     fields:
-      - { name: title, label: Site Title, type: string }
-      - { name: url, label: URL, type: string }
-      - { name: language, label: Language, type: string }
-      - { name: description, label: Description, type: text }
-      - { name: logo, label: Logo, type: image }
-      - { name: favicon, label: Favicon, type: image }
-      - { name: facebook, label: Facebook Page URL, type: string }
-      - { name: gtag, label: Google Analytics ID, type: string }
-      - name: author
-        label: Author
-        type: object
-        fields:
-          - { name: name, label: Name, type: string }
-          - { name: email, label: Email, type: string }
-          - { name: url, label: URL, type: string }
-          - { name: bio, label: Bio, type: text }
-          - { name: image, label: Avatar, type: image }
-          - { name: facebook, label: Personal Facebook, type: string }
+      - name: body
+        label: Metadata Code
+        type: code
+        options:
+          language: javascript
