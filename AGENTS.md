@@ -110,6 +110,8 @@ draft: Boolean (excludes from production builds)
 tags: Array of strings
 date_published: ISO date
 date_updated: ISO date
+show_latest_posts: Boolean (page layout: shows 4 latest posts at bottom)
+feature_image: String (featured image path)
 ```
 
 **Draft Posts**: Set `draft: true` in front matter. Drafts are visible during `--serve`/`--watch` but excluded from production builds.
@@ -142,6 +144,7 @@ The site uses converted Ghost Liebling theme components:
 - `base.njk`: Main HTML structure with theme CSS/JS includes
 - `home.njk`: Homepage with 3-column featured section + "LATEST" grid
 - `post.njk`: Blog post with hero image, share buttons, author bio, related posts
+- `page.njk`: Static page layout with hero, share buttons, progress indicator, optional latest posts
 - `tag.njk`: Tag archive pages with hero and post grid
 - `collection.njk`: Collection pages (uses `collectionName` frontmatter)
 - `author.njk`: Author/about page with avatar, bio, social links
@@ -248,38 +251,47 @@ Per `.editorconfig`:
 
 1. **Vietnamese Content**: All blog posts are in Vietnamese. Site language is set to `vi` in metadata.js.
 
-2. **Image Organization**: Images are stored in `public/images/YYYY/MM/` format. They are referenced in posts as `/images/2020/06/filename.jpg`.
+2. **Favicon**: Site favicon is configured in metadata.js (`favicon: '/favicon.png'`).
 
-3. **Tag System**:
+3. **Author Metadata**:
+   - Facebook page: `https://www.facebook.com/deconlontunhien`
+   - Author's personal Facebook: `thao.rachel.nguyen`
+   - Author bio: "Một bà mẹ 2 con chia sẻ về những điều căn bản, đơn giản và đem lại thanh thản trong việc chăm sóc, dạy dỗ con cái và cuộc sống thường ngày."
+
+4. **Image Organization**: Images are stored in `public/images/YYYY/MM/` format. They are referenced in posts as `/images/2020/06/filename.jpg`.
+
+5. **Tag System**:
    - Multi-tag support per post
    - Auto-generates tag pages at `/tags/{slug}/`
    - System tags (all, nav, post, posts, tagList) and collection names are filtered from display
 
-4. **Draft Posts**:
+6. **Draft Posts**:
    - Set `draft: true` in post frontmatter
    - Drafts are visible during `--serve`/`--watch` mode
    - Drafts are excluded from production builds (permalink returns false, excluded from collections)
    - Use `BUILD_DRAFTS=true` env var to include drafts in production builds
 
-5. **Collection Pages**:
+7. **Collection Pages**:
    - Use `layouts/collection.njk` layout
    - Set `collectionName` in frontmatter to match the tag name (with diacritics)
    - Example: `collectionName: Chuyện chị em` for posts tagged "Chuyện chị em"
    - Collection pages have custom permalinks: `/tags/chuyen-chi-em/`
 
-6. **Pagination**:
+8. **Pagination**:
    - Homepage shows 10 posts per page
    - URL pattern: `/`, `/page/2/`, `/page/3/`
    - Uses `pagination` in front matter
 
-7. **Feeds**:
+9. **Feeds**:
    - Atom: `/feed/feed.xml`
    - JSON: `/feed/feed.json`
    - Both include full post content
 
-8. **Theme Assets**: Ghost Liebling theme assets are in `public/theme/`. Original theme source is preserved in `_ghost/theme/` for reference.
+10. **Reading Progress Indicator**: Posts and pages display a circular progress indicator on the scroll-to-top button showing scroll position.
 
-9. **Passthrough Copy**: `public/` directory contents are copied directly to `_site/` root. This includes `theme/` directory with CSS, JS, fonts, and images.
+11. **Theme Assets**: Ghost Liebling theme assets are in `public/theme/`. Original theme source is preserved in `_ghost/theme/` for reference.
+
+12. **Passthrough Copy**: `public/` directory contents are copied directly to `_site/` root. This includes `theme/` directory with CSS, JS, fonts, and images.
 
 ## Plugin Documentation
 

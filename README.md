@@ -58,6 +58,8 @@ pnpm run debug
 - **RSS Feeds**: Atom and JSON feeds
 - **Navigation**: Content-driven menu via eleventyNavigation plugin
 - **Live Reload**: Development server with hot reload
+- **Reading Progress**: Circular progress indicator on scroll-to-top button for posts and pages
+- **Favicon**: Site favicon configured at `/favicon.png`
 
 ## Project Structure
 
@@ -68,7 +70,7 @@ content/                    # Site content
 └── index.njk               # Homepage
 
 _includes/
-├── layouts/                # Page layouts (base, home, post, tag, collection, author)
+├── layouts/                # Page layouts (base, home, post, page, tag, collection, author)
 └── partials/               # Reusable components (header, footer, cards)
 
 public/
@@ -104,6 +106,18 @@ draft: false
 | `feature_image` | No | Featured image path |
 | `tags` | No | Array of tag names |
 | `draft` | No | Set `true` to hide from production |
+| `show_latest_posts` | No | Set `true` to show latest posts section at bottom (page layout only) |
+| `date_updated` | No | Last updated date (ISO format) |
+
+### Page Layout
+
+The `page` layout (used by gioi-thieu and other static pages) includes:
+- Hero section with feature image (optional)
+- Share buttons (Facebook, Twitter)
+- Scroll-to-top button with reading progress indicator
+- Tags list
+- Updated date display
+- Optional "Mới nhất" (Latest) posts section (4 posts, togglable via `show_latest_posts`)
 
 ### Draft Posts
 
