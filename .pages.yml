@@ -1,4 +1,4 @@
-# page CMS config https://app.pagescms.org
+# Page CMS config https://app.pagescms.org
 media: public/images
 content:
   - name: posts
@@ -6,29 +6,120 @@ content:
     type: collection
     path: content/_posts
     view:
-      fields: [title, draft, date]
+      fields: [title, draft, date, tags]
+      primary: title
+      sort: [date, desc]
     fields:
       - { name: title, label: Title, type: string, required: true }
-      - { name: description, label: Description, type: string }
+      - { name: slug, label: Slug (URL), type: string }
+      - { name: description, label: Short Description, type: text }
+      - { name: excerpt, label: Excerpt, type: text }
+      - { name: feature_image, label: Feature Image, type: image }
       - { name: date, label: Date, type: date }
+      - { name: date_published, label: Date Published (ISO), type: datetime }
+      - { name: date_updated, label: Date Updated (ISO), type: datetime }
       - { name: draft, label: Draft, type: boolean }
-      - { name: tags, label: Tags, type: string, list: true }
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+        description: "Common tags: Nuôi dạy con, Nuôi con, Dạy con, Review, Chuyện chị em, Tự nhiên mà sống"
       - { name: body, label: Body, type: rich-text }
-  - name: about
-    label: About page
+
+  - name: gioi-thieu
+    label: About Page
     type: file
-    path: content/about/index.md
+    path: content/gioi-thieu/index.md
     fields:
-      - { name: layout, type: string, hidden: true, default: layouts/base.njk }
+      - { name: layout, type: string, hidden: true, default: layouts/page.njk }
+      - { name: title, label: Title, type: string }
+      - { name: slug, label: Slug, type: string }
+      - { name: date_published, label: Date Published, type: datetime }
+      - { name: date_updated, label: Date Updated, type: datetime }
+      - { name: show_latest_posts, label: Show Latest Posts, type: boolean }
       - name: eleventyNavigation
         label: Navigation
         type: object
         fields:
-          - { name: key, label: Key, type: string }
+          - { name: key, label: Display Name, type: string }
           - { name: order, label: Order, type: number }
       - { name: body, label: Body, type: rich-text }
+
+  - name: nuoi-day-con
+    label: Parenting Collection Page
+    type: file
+    path: content/nuoi-day-con/index.njk
+    format: yaml-frontmatter
+    fields:
+      - { name: layout, type: string, hidden: true, default: layouts/collection.njk }
+      - { name: title, label: Title, type: string }
+      - { name: collectionName, label: Collection Name (Tag), type: string }
+      - { name: permalink, label: Permalink, type: string }
+      - { name: description, label: Description, type: text }
+      - name: eleventyNavigation
+        label: Navigation
+        type: object
+        fields:
+          - { name: key, label: Display Name, type: string }
+          - { name: order, label: Order, type: number }
+
+  - name: chuyen-chi-em
+    label: Women's Corner Collection Page
+    type: file
+    path: content/chuyen-chi-em/index.njk
+    format: yaml-frontmatter
+    fields:
+      - { name: layout, type: string, hidden: true, default: layouts/collection.njk }
+      - { name: title, label: Title, type: string }
+      - { name: collectionName, label: Collection Name (Tag), type: string }
+      - { name: permalink, label: Permalink, type: string }
+      - { name: description, label: Description, type: text }
+      - name: eleventyNavigation
+        label: Navigation
+        type: object
+        fields:
+          - { name: key, label: Display Name, type: string }
+          - { name: order, label: Order, type: number }
+
+  - name: review
+    label: Review Collection Page
+    type: file
+    path: content/review/index.njk
+    format: yaml-frontmatter
+    fields:
+      - { name: layout, type: string, hidden: true, default: layouts/collection.njk }
+      - { name: title, label: Title, type: string }
+      - { name: collectionName, label: Collection Name (Tag), type: string }
+      - { name: permalink, label: Permalink, type: string }
+      - { name: description, label: Description, type: text }
+      - name: eleventyNavigation
+        label: Navigation
+        type: object
+        fields:
+          - { name: key, label: Display Name, type: string }
+          - { name: order, label: Order, type: number }
+
   - name: metadata
-    label: Metadata
+    label: Site Settings
     type: file
     path: _data/metadata.js
-    format: code
+    format: javascript
+    fields:
+      - { name: title, label: Site Title, type: string }
+      - { name: url, label: URL, type: string }
+      - { name: language, label: Language, type: string }
+      - { name: description, label: Description, type: text }
+      - { name: logo, label: Logo, type: image }
+      - { name: favicon, label: Favicon, type: image }
+      - { name: facebook, label: Facebook Page URL, type: string }
+      - { name: gtag, label: Google Analytics ID, type: string }
+      - name: author
+        label: Author
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: url, label: URL, type: string }
+          - { name: bio, label: Bio, type: text }
+          - { name: image, label: Avatar, type: image }
+          - { name: facebook, label: Personal Facebook, type: string }
