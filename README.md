@@ -66,7 +66,11 @@ pnpm run debug
 ```
 content/                    # Site content
 ├── _posts/                 # Blog posts (Markdown)
-├── gioi-thieu/             # About page
+├── gioi-thieu.md           # About page
+├── chuyen-chi-em/          # "Women's Corner" collection page
+├── nuoi-day-con/           # "Parenting" collection page
+├── review/                 # "Reviews" collection page
+├── feed/                   # Atom/JSON feed generation
 └── index.njk               # Homepage
 
 _includes/

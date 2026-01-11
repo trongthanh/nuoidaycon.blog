@@ -41,8 +41,8 @@ pnpm run build-ghpages
 ```
 content/                    # Input directory (all site content)
 ├── _posts/                 # Blog posts (auto-tagged with "posts")
+├── gioi-thieu.md           # "About/Author" page
 ├── chuyen-chi-em/          # "Women's Corner" collection page
-├── gioi-thieu/             # "About/Author" page
 ├── nuoi-day-con/           # "Parenting" collection page
 ├── review/                 # "Reviews" collection page
 ├── feed/                   # Atom/JSON feed generation
@@ -229,7 +229,7 @@ File: `netlify.toml`
 
 File: `.pages.yml` (Page CMS - https://app.pagescms.org)
 - Media directory: `public/images/`
-- Collections: Posts, About, Metadata
+- Collections: Posts, About (gioi-thieu.md), Metadata
 
 ## Performance Targets
 
