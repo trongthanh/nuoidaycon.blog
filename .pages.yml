@@ -18,13 +18,13 @@ content:
       - { name: feature_image, label: Feature Image, type: image }
       - {
           name: date_published,
-          label: Date Published (ISO),
+          label: Date Published,
           type: date,
           options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSSX" },
         }
       - {
           name: date_updated,
-          label: Date Updated (ISO),
+          label: Date Updated,
           type: date,
           options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss.SSSX" },
         }
@@ -36,8 +36,8 @@ content:
         description: 'Common tags: Nuôi dạy con, Nuôi con, Dạy con, Review, Chuyện chị em, Tự nhiên mà sống'
       - { name: body, label: Body, type: rich-text }
 
-  - name: gioi-thieu
-    label: 'Giới Thiệu'
+  - name: pages
+    label: 'Pages'
     type: collection
     path: content
     match: '*.md'
