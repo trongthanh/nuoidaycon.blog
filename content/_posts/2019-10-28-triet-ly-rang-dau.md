@@ -3,7 +3,8 @@ title: Triết lý rang đậu
 slug: triet-ly-rang-dau
 date_published: 2019-10-27T20:17:51.000Z
 date_updated: 2020-06-19T04:27:38.000Z
-tags: Chuyện chị em
+tags:
+  - Chuyện chị em
 excerpt: Tám trăm năm anh chồng mới vào bếp nấu món đậu phộng (lạc) rang muối để bỏ hộp mang lên văn phòng nhâm nhi. Xuất hiện triết lý rang đậu phộng nhảm nhí nhưng có lý của vợ chồng mình.
 feature_image: /images/2020/06/whatsup.jpg
 ---
