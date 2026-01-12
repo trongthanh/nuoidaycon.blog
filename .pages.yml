@@ -1,6 +1,7 @@
 # Page CMS config https://app.pagescms.org
 media:
   input: content/images
+  output: /images
 content:
   - name: posts
     label: Posts
@@ -39,7 +40,7 @@ content:
     label: 'Giới Thiệu'
     type: collection
     path: content
-    match: "*.md"
+    match: '*.md'
     view:
       fields: [title, slug, date_published]
       primary: title
